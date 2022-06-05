@@ -3,7 +3,7 @@
     <v-col v-for="tab in tabs" :key="tab.index" class="px-1 tab">
       <v-hover v-slot="{ hover }">
         <nuxt-link :to="tab.to" class="center block">
-          <v-card light tile class="text-center block py-5" :color="hover? tab.color : ''">
+          <v-card light tile class="text-center block py-5" :color="hover || active == tab.index? tab.color : ''">
             <v-icon size="50">{{ tab.icon }}</v-icon>
             <span class="tab-title">{{ tab.title }}</span>
             <span class="e-title">{{ tab.etitle }}</span>
@@ -34,6 +34,12 @@ span.e-title {
 <script>
 export default {
   name: "TabMemu",
+  props: {
+    active: {
+      type: Number,
+      default: 1,
+    }
+  },
   data() {
     return {
       tabs: [

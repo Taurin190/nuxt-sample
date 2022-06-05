@@ -8,7 +8,6 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <TabMenu />
         <Nuxt />
       </v-container>
     </v-main>

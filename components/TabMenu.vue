@@ -1,13 +1,15 @@
 <template>
   <v-row :align="align">
     <v-col v-for="tab in tabs" :key="tab.index" class="px-1 tab">
-      <nuxt-link :to="tab.to" class="center block">
-        <v-card tile class="text-center block py-5">
-          <v-icon size=50>{{ tab.icon }}</v-icon>
-          <span class="tab-title">{{ tab.title }}</span>
-          <span class="e-title">{{ tab.etitle }}</span>
-        </v-card>
-      </nuxt-link>
+      <v-hover v-slot="{ hover }">
+        <nuxt-link :to="tab.to" class="center block">
+          <v-card light tile class="text-center block py-5" :color="hover? tab.color : ''">
+            <v-icon size="50">{{ tab.icon }}</v-icon>
+            <span class="tab-title">{{ tab.title }}</span>
+            <span class="e-title">{{ tab.etitle }}</span>
+          </v-card>
+        </nuxt-link>
+      </v-hover>
     </v-col>
   </v-row>
 </template>
@@ -16,17 +18,17 @@
 div.tab > a {
   text-decoration: none;
 }
+
 span.tab-title {
   display: block;
   font-size: 14px;
-  color: lightgray;
+  color: black;
 }
 span.e-title {
   display: block;
   font-size: 12px;
-  color: darkgray;
+  color: gray;
 }
-
 </style>
 
 <script>
@@ -41,6 +43,7 @@ export default {
           title: "Sampleシネマズ",
           etitle: "HOME",
           to: "/",
+          color: "light-blue",
         },
         {
           index: 2,
@@ -48,6 +51,7 @@ export default {
           title: "上映中の作品",
           etitle: "NOW SHOWING",
           to: "/nowshowing",
+          color: "green",
         },
         {
           index: 3,
@@ -55,6 +59,7 @@ export default {
           title: "公開予定作品",
           etitle: "COMING SOON",
           to: "/comingsoon",
+          color: "orange",
         },
         {
           index: 4,
@@ -62,6 +67,7 @@ export default {
           title: "イベント/キャンペーン",
           etitle: "EVENTS / CAMPAIGNS",
           to: "/events",
+          color: "yellow",
         },
         {
           index: 5,
@@ -69,6 +75,7 @@ export default {
           title: "サービス案内",
           etitle: "SERVICE INFO",
           to: "/service",
+          color: "pink",
         },
         {
           index: 6,
@@ -76,6 +83,7 @@ export default {
           title: "チケット購入・照会",
           etitle: "ONLINE TICKETS",
           to: "/tickets",
+          color: "brown",
         },
       ],
     };

@@ -2,13 +2,13 @@
   <v-app dark>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-container>
-        <!-- <v-toolbar-title v-text="title" /> -->
         <AddressBarLogo />
         <v-spacer />
       </v-container>
     </v-app-bar>
     <v-main>
       <v-container>
+        <TabMenu />
         <Nuxt />
       </v-container>
     </v-main>

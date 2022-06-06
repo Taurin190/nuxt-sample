@@ -2,6 +2,9 @@
   <div>
     <TabMenu :active=1 />
     <v-row justify="center" align="center">
+      <v-col cols="12">
+        <carousel />
+      </v-col>
       <v-col cols="12" sm="8" md="6">
         <v-card class="logo py-4 d-flex justify-center">
           <NuxtLogo />
@@ -84,7 +87,9 @@
 </template>
 
 <script>
+import Carousel from '~/components/Carousel.vue';
 export default {
+  components: { Carousel },
   name: "IndexPage",
 };
 </script>

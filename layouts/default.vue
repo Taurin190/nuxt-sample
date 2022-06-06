@@ -1,6 +1,6 @@
 <template>
-  <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app>
+  <v-app light :style="{ background: $vuetify.theme.themes.light.background }">
+    <v-app-bar :clipped-left="clipped" fixed app dark>
       <v-container>
         <AddressBarLogo />
         <v-spacer />

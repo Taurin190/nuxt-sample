@@ -3,7 +3,14 @@
     <v-col v-for="tab in tabs" :key="tab.index" class="px-1 tab">
       <v-hover v-slot="{ hover }">
         <nuxt-link :to="tab.to" class="center block">
-          <v-card light tile class="text-center block py-5" :color="hover || active == tab.index? tab.color : ''">
+          <v-card
+            light
+            tile
+            class="text-center block py-5 rounded-lg"
+            :color="hover || active == tab.index ? tab.color : ''"
+            elevation="2"
+            outlined
+          >
             <v-icon size="50">{{ tab.icon }}</v-icon>
             <span class="tab-title">{{ tab.title }}</span>
             <span class="e-title">{{ tab.etitle }}</span>
@@ -21,7 +28,7 @@ div.tab > a {
 
 span.tab-title {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   color: black;
 }
 span.e-title {
@@ -38,7 +45,7 @@ export default {
     active: {
       type: Number,
       default: 1,
-    }
+    },
   },
   data() {
     return {

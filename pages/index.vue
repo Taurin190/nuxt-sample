@@ -7,8 +7,10 @@
       </v-col>
     </v-row>
     <ImageBanners />
-    <v-row justify="center" align="center">
-    <div v-for="panel in panels" :key="panel.title">
+    <div
+      v-for="panel in panels"
+      :key="panel.title"
+    >
       <movie-list-panel
         :to="panel.to"
         :icon="panel.icon"
@@ -16,7 +18,6 @@
         :etitle="panel.etitle"
       />
     </div>
-    </v-row>
   </div>
 </template>
 

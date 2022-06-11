@@ -1,5 +1,5 @@
 <template>
-  <v-row align="align">
+  <v-row align="center">
       <ImageBanner />
       <ImageBanner />
       <ImageBanner />

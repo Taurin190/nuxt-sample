@@ -1,5 +1,5 @@
 <template>
-  <v-row align="align">
+  <v-row align="center">
     <v-col v-for="tab in tabs" :key="tab.index" class="px-1 tab">
       <v-hover v-slot="{ hover }">
         <nuxt-link :to="tab.to" class="center block">

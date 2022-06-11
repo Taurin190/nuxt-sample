@@ -3,6 +3,8 @@
     <v-row justify="left" align="center">
       <panel-title :to="panel_title.to" :icon="panel_title.icon" :title="panel_title.title" :etitle="panel_title.etitle" />
     </v-row>
+    <v-row  justify="left" align="center">
+    </v-row>
   </div>
 </template>
 

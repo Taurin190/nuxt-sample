@@ -1,18 +1,18 @@
 <template>
-<div>
-  <v-row justify="left" align="center">
-    <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
-  </v-row>
-  <v-row justify="left" align="center">
-    <v-col v-for="movie in movies" :key="movie.index" cols="4">
-      <movie-card
-        :to="movie.to"
-        :image_path="movie.image_path"
-        :title="movie.title"
-      />
-    </v-col>
-  </v-row>
-</div>
+  <div>
+    <v-row justify="left" align="center">
+      <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
+    </v-row>
+    <v-row justify="left" align="center">
+      <v-col v-for="movie in movies" :key="movie.index" cols="4">
+        <movie-card
+          :to="movie.to"
+          :image_path="movie.image_path"
+          :title="movie.title"
+        />
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>

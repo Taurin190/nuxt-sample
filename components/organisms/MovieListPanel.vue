@@ -1,7 +1,9 @@
 <template>
   <div>
     <v-row justify="left" align="center">
-      <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
+      <v-col cols="12">
+        <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
+      </v-col>
     </v-row>
     <v-row justify="left" align="center">
       <v-col v-for="movie in movies" :key="movie.index" cols="4">

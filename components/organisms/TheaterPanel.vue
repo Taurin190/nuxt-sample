@@ -10,14 +10,17 @@
         />
       </v-col>
     </v-row>
-    <v-row justify="left" align="center"> </v-row>
+    <v-row justify="left" align="center">
+        <theater-list />
+    </v-row>
   </div>
 </template>
 
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
+import TheaterList from '../molecules/TheaterList.vue';
 export default {
-  components: { PanelTitle },
+  components: { PanelTitle, TheaterList },
   data() {
     return {
       panel_title: {

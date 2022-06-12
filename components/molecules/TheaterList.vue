@@ -7,7 +7,9 @@
         </dt>
         <dd :key="theater.index">
           <ul>
-            <li v-for="place in theater.list" :key="place.name">{{ place.name }}</li>
+            <li v-for="place in theater.list" :key="place.name">
+              {{ place.name }}
+            </li>
           </ul>
         </dd>
       </template>
@@ -22,11 +24,11 @@ dd {
   margin-left: 80px;
 }
 ul {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 li {
-    min-width: 80px;
+  min-width: 80px;
 }
 </style>
 <script>
@@ -83,7 +85,7 @@ export default {
               name: "湘南",
               ename: "shonan",
             },
-             {
+            {
               name: "ムービル",
               ename: "movil",
             },
@@ -94,7 +96,7 @@ export default {
           list: [
             {
               name: "名古屋",
-              ename: "nagoya",  
+              ename: "nagoya",
             },
             {
               name: "四日市",

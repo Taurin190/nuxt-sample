@@ -7,12 +7,12 @@
       <v-col cols="8">
         <v-row no-gutters>
           <v-col cols="12">
-            {{ title }}
+            <span class="title">{{ title }}</span>
           </v-col>
         </v-row>
         <v-row no-gutters>
           <v-col cols="12">
-            {{ etitle }}
+            <span class="e-title">{{ etitle }}</span>
           </v-col>
         </v-row>
       </v-col>
@@ -22,6 +22,19 @@
 <style scoped>
 div.icon {
     max-width: 60px;
+}
+div > a {
+  text-decoration: none;
+}
+span.title {
+  display: block;
+  font-size: 13px;
+  color: black;
+}
+span.e-title {
+  display: block;
+  font-size: 12px;
+  color: gray;
 }
 </style>
 <script>

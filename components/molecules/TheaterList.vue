@@ -21,14 +21,17 @@ dt {
   float: left;
 }
 dd {
-  margin-left: 80px;
+  margin-left: 60px;
+  border-left: 1px solid white;
+  margin-bottom: 10px;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
 }
 li {
-  min-width: 80px;
+  min-width: 70px;
+  margin-bottom: 5px;
 }
 </style>
 <script>

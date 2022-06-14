@@ -6,7 +6,7 @@
           {{ index }}
         </dt>
         <dd :key="theater.index">
-          <ul>
+          <ul class="theater_list">
             <li v-for="place in theater.list" :key="place.name">
               {{ place.name }}
             </li>
@@ -25,12 +25,14 @@ dd {
   border-left: 1px solid white;
   margin-bottom: 10px;
 }
-ul {
+ul.theater_list {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 5px;
 }
 li {
-  min-width: 70px;
+  min-width: 40px;
+  margin-left: 30px;
   margin-bottom: 5px;
 }
 </style>

@@ -8,7 +8,9 @@
         <dd :key="theater.index">
           <ul class="theater_list">
             <li v-for="place in theater.list" :key="place.name">
-              {{ place.name }}
+              <nuxt-link :to="place.to">
+                {{ place.name }}
+              </nuxt-link>
             </li>
           </ul>
         </dd>
@@ -35,6 +37,12 @@ li {
   margin-left: 30px;
   margin-bottom: 5px;
 }
+li > a {
+  text-decoration: none;
+}
+li > a:link {
+  color: white;
+}
 </style>
 <script>
 export default {
@@ -48,6 +56,7 @@ export default {
             {
               name: "富谷",
               ename: "tomiya",
+              to: "/theater/tomiya",
             },
           ],
         },
@@ -57,42 +66,52 @@ export default {
             {
               name: "佐野",
               ename: "sano",
+              to: "/theater/sano",
             },
             {
               name: "高崎",
               ename: "takasaki",
+              to: "/theater/takasaki",
             },
             {
               name: "菖蒲",
               ename: "shobu",
+              to: "/theater/shobu",
             },
             {
               name: "木場",
               ename: "kiba",
+              to: "/theater/kiba",
             },
             {
               name: "二子玉川",
               ename: "futakotamagawa",
+              to: "/theater/futakotamagawa",
             },
             {
               name: "グランベリーパーク",
               ename: "grandberrypark",
+              to: "/theater/grandberrypark",
             },
             {
               name: "港北",
               ename: "kohoku",
+              to: "/theater/kohoku",
             },
             {
               name: "川崎",
               ename: "kawasaki",
+              to: "/theater/kawasaki",
             },
             {
               name: "湘南",
               ename: "shonan",
+              to: "/theater/shonan",
             },
             {
               name: "ムービル",
               ename: "movil",
+              to: "/theater/movil",
             },
           ],
         },
@@ -102,14 +121,17 @@ export default {
             {
               name: "名古屋",
               ename: "nagoya",
+              to: "/theater/nagoya",
             },
             {
               name: "四日市",
               ename: "yokkaichi",
+              to: "/theater/yokkaichi",
             },
             {
               name: "明和",
               ename: "meiwa",
+              to: "/theater/meiwa",
             },
           ],
         },
@@ -118,7 +140,18 @@ export default {
           list: [
             {
               name: "大阪エキスポシティ",
-              ename: "tomiya",
+              ename: "osaka-expocity",
+              to: "/theater/osaka-expocity",
+            },
+            {
+              name: "箕面",
+              ename: "minoh",
+              to: "/theater/minoh",
+            },
+            {
+              name: "HAT神戸",
+              ename: "hatkobe",
+              to: "/theater/hatkobe",
             },
           ],
         },
@@ -126,8 +159,9 @@ export default {
           index: 5,
           list: [
             {
-              name: "富谷",
-              ename: "tomiya",
+              name: "広島",
+              ename: "hiroshima",
+              to: "/theater/hiroshima",
             },
           ],
         },
@@ -135,8 +169,9 @@ export default {
           index: 6,
           list: [
             {
-              name: "富谷",
-              ename: "tomiya",
+              name: "佐賀",
+              ename: "saga",
+              to: "/theater/saga",
             },
           ],
         },

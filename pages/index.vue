@@ -11,7 +11,8 @@
       <v-col cols="4">
         <theater-panel />
       </v-col>
-      <v-col cols="8"
+      <v-col cols="8">
+        <div
         v-for="panel in panels"
         :key="panel.title"
       >
@@ -21,6 +22,7 @@
           :title="panel.title"
           :etitle="panel.etitle"
         />
+        </div>
       </v-col>
     </v-row>
   </div>

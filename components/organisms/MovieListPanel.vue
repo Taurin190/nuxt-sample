@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="movie-list-panel py-5 mb-5 px-4 rounded">
     <v-row justify="left" align="center">
       <v-col cols="12">
         <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
@@ -16,7 +16,11 @@
     </v-row>
   </div>
 </template>
-
+<style scoped>
+div.movie-list-panel {
+    background-color: white;
+}
+</style>
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import MovieCard from "../molecules/MovieCard.vue";

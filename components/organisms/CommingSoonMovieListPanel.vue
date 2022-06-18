@@ -2,7 +2,7 @@
   <div class="movie-list-panel py-5 mb-5 px-4 rounded">
     <v-row justify="left" align="center">
       <v-col cols="12">
-        <panel-title :to="to" :icon="icon" :title="title" :etitle="etitle" />
+        <panel-title :to="panel_title.to" :icon="panel_title.icon" :title="panel_title.title" :etitle="panel_title.etitle" />
       </v-col>
     </v-row>
     <v-row justify="left" align="center">
@@ -26,7 +26,7 @@ import PanelTitle from "../molecules/PanelTitle.vue";
 import MovieCard from "../molecules/MovieCard.vue";
 export default {
   components: { PanelTitle, MovieCard },
-  name: "MovieListPanel",
+  name: "CommingSoonMovieListPanel",
   props: {
     to: {
       type: String,
@@ -47,6 +47,12 @@ export default {
   },
   data() {
     return {
+      panel_title: {
+        to: "/comingsoon",
+        icon: "mdi-video-vintage",
+        title: "公開予定作品",
+        etitle: "COMING SOON",
+      },
       movies: [
         {
           index: 1,

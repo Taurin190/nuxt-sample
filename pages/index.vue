@@ -13,17 +13,8 @@
         <point-card-panel />
       </v-col>
       <v-col cols="8">
-        <div
-        v-for="panel in panels"
-        :key="panel.title"
-      >
-        <movie-list-panel
-          :to="panel.to"
-          :icon="panel.icon"
-          :title="panel.title"
-          :etitle="panel.etitle"
-        />
-        </div>
+        <showing-movie-list-panel />
+        <comming-soon-movie-list-panel />
       </v-col>
     </v-row>
     <v-row>
@@ -39,29 +30,12 @@
 <script>
 import Carousel from "~/components/Carousel.vue";
 import CampaignListPanel from '~/components/organisms/CampaignListPanel.vue';
-import MovieListPanel from "~/components/organisms/MovieListPanel.vue";
+import CommingSoonMovieListPanel from '~/components/organisms/CommingSoonMovieListPanel.vue';
 import PointCardPanel from '~/components/organisms/PointCardPanel.vue';
+import ShowingMovieListPanel from '~/components/organisms/ShowingMovieListPanel.vue';
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
 export default {
-  components: { Carousel, MovieListPanel, TheaterPanel, CampaignListPanel, PointCardPanel },
+  components: { Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieListPanel, ShowingMovieListPanel },
   name: "IndexPage",
-  data() {
-    return {
-      panels: [
-        {
-          to: "/nowshowing",
-          icon: "mdi-movie-open",
-          title: "上映中の作品",
-          etitle: "NOW SHOWING",
-        },
-        {
-          icon: "mdi-video-vintage",
-          title: "公開予定作品",
-          etitle: "COMING SOON",
-          to: "/comingsoon",
-        },
-      ],
-    };
-  },
 };
 </script>

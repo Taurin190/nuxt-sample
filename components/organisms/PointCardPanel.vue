@@ -3,6 +3,7 @@
     <v-row justify="left" align="center">
       <v-col cols="12">
         <panel-title :to="panel_title.to" :icon="panel_title.icon" :title="panel_title.title" :etitle="panel_title.etitle" />
+        <point-card-link />
       </v-col>
     </v-row>
   </div>
@@ -14,8 +15,9 @@ div.point-card-panel {
 </style>
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
+import PointCardLink from '../molecules/PointCardLink.vue';
 export default {
-  components: { PanelTitle },
+  components: { PanelTitle, PointCardLink },
   name: "PointCardPanel",
   data() {
     return {

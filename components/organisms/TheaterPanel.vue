@@ -1,5 +1,5 @@
 <template>
-  <div class="theater-panel py-5 px-4 rounded">
+  <div class="theater-panel py-5 px-4 mb-5 rounded">
     <v-row justify="left" align="center">
       <v-col cols="12">
         <panel-title

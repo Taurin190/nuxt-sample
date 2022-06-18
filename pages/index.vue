@@ -1,15 +1,16 @@
 <template>
   <div>
-    <TabMenu :active="1" />
+    <tab-menu :active="1" />
     <v-row justify="center" align="center">
       <v-col cols="12">
         <carousel />
       </v-col>
     </v-row>
-    <ImageBanners />
+    <image-banners />
     <v-row>
       <v-col cols="4">
         <theater-panel />
+        <point-card-panel />
       </v-col>
       <v-col cols="8">
         <div
@@ -27,7 +28,7 @@
     </v-row>
     <v-row>
       <v-col cols="8">
-        <campain-list-panel />
+        <campaign-list-panel />
       </v-col>
       <v-col cols="4">
       </v-col>
@@ -37,11 +38,12 @@
 
 <script>
 import Carousel from "~/components/Carousel.vue";
-import CampainListPanel from '~/components/organisms/CampainListPanel.vue';
+import CampaignListPanel from '~/components/organisms/CampaignListPanel.vue';
 import MovieListPanel from "~/components/organisms/MovieListPanel.vue";
+import PointCardPanel from '~/components/organisms/PointCardPanel.vue';
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
 export default {
-  components: { Carousel, MovieListPanel, TheaterPanel, CampainListPanel },
+  components: { Carousel, MovieListPanel, TheaterPanel, CampaignListPanel, PointCardPanel },
   name: "IndexPage",
   data() {
     return {

@@ -25,15 +25,23 @@
         </div>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col cols="8">
+        <campain-list-panel />
+      </v-col>
+      <v-col cols="4">
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
 import Carousel from "~/components/Carousel.vue";
+import CampainListPanel from '~/components/organisms/CampainListPanel.vue';
 import MovieListPanel from "~/components/organisms/MovieListPanel.vue";
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
 export default {
-  components: { Carousel, MovieListPanel, TheaterPanel },
+  components: { Carousel, MovieListPanel, TheaterPanel, CampainListPanel },
   name: "IndexPage",
   data() {
     return {

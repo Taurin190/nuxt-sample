@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-3">
     <h3>マイページ</h3>
     <v-select
       v-model="theaterSelected"
@@ -10,14 +10,7 @@
       outlined
     >
       <template slot="selection" slot-scope="data">
-        <v-chip
-          :selected="data.selected"
-          close
-          class="chip--select-multi"
-          @input="remove(data.item)"
-        >
-          {{ data.item.name }}
-        </v-chip>
+        <span class="selected">{{ data.item.name }}</span>
       </template>
       <template slot="item" slot-scope="data">
           <v-list-tile-content v-text="data.item.name" />
@@ -25,6 +18,14 @@
     </v-select>
   </div>
 </template>
+<style scoped>
+v-list-tile-content {
+    margin-left: 15px;
+}
+span.selected {
+   margin-left: 15px; 
+}
+</style>
 <script>
 export default {
   name: "LoginPageLink",

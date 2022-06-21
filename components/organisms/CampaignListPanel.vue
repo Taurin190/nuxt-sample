@@ -2,7 +2,12 @@
   <div class="campaign-list-panel py-5 mb-5 px-4 rounded">
     <v-row justify="left" align="center">
       <v-col cols="12">
-        <panel-title :to="panel_title.to" :icon="panel_title.icon" :title="panel_title.title" :etitle="panel_title.etitle" />
+        <panel-title
+          :to="panel_title.to"
+          :icon="panel_title.icon"
+          :title="panel_title.title"
+          :etitle="panel_title.etitle"
+        />
       </v-col>
     </v-row>
     <v-row justify="left" align="center"> </v-row>
@@ -10,7 +15,7 @@
 </template>
 <style scoped>
 div.campaign-list-panel {
-    background-color: white;
+  background-color: white;
 }
 </style>
 <script>

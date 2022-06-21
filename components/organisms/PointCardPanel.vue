@@ -2,7 +2,12 @@
   <div class="point-card-panel py-5 mb-5 px-4 rounded">
     <v-row justify="left" align="center">
       <v-col cols="12">
-        <panel-title :to="panel_title.to" :icon="panel_title.icon" :title="panel_title.title" :etitle="panel_title.etitle" />
+        <panel-title
+          :to="panel_title.to"
+          :icon="panel_title.icon"
+          :title="panel_title.title"
+          :etitle="panel_title.etitle"
+        />
         <point-card-link />
         <login-page-link />
       </v-col>
@@ -11,13 +16,13 @@
 </template>
 <style scoped>
 div.point-card-panel {
-    background-color: white;
+  background-color: white;
 }
 </style>
 <script>
-import LoginPageLink from '../molecules/LoginPageLink.vue';
+import LoginPageLink from "../molecules/LoginPageLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
-import PointCardLink from '../molecules/PointCardLink.vue';
+import PointCardLink from "../molecules/PointCardLink.vue";
 export default {
   components: { PanelTitle, PointCardLink, LoginPageLink },
   name: "PointCardPanel",

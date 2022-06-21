@@ -13,21 +13,20 @@
         <span class="selected">{{ data.item.name }}</span>
       </template>
       <template slot="item" slot-scope="data">
-          <v-list-tile-content v-text="data.item.name" />
+        <v-list-tile-content v-text="data.item.name" />
       </template>
     </v-select>
   </div>
 </template>
 <style scoped>
 div.pointcard {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 v-list-tile-content {
-    margin-left: 15px;
-
+  margin-left: 15px;
 }
 span.selected {
-   margin-left: 15px; 
+  margin-left: 15px;
 }
 </style>
 <script>

@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-3">
-    <h3>マイページ</h3>
+  <div class="pointcard mt-3 py-2 px-4 rounded">
+    <h3 class="mb-2">マイページ</h3>
     <v-select
       v-model="theaterSelected"
       :items="theaters"
@@ -19,8 +19,12 @@
   </div>
 </template>
 <style scoped>
+div.pointcard {
+    background-color: whitesmoke;
+}
 v-list-tile-content {
     margin-left: 15px;
+
 }
 span.selected {
    margin-left: 15px; 

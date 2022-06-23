@@ -12,3 +12,8 @@
   width: 210px;
 }
 </style>
+<script>
+export default {
+  name: "AddressBarLogo",
+};
+</script>

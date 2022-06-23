@@ -29,14 +29,15 @@
 
 <script>
 import TabMenu from "~/components/organisms/TabMenu.vue";
-import Carousel from "~/components/Carousel.vue";
+import Carousel from "~/components/organisms/Carousel.vue";
 import CampaignListPanel from '~/components/organisms/CampaignListPanel.vue';
 import CommingSoonMovieListPanel from '~/components/organisms/CommingSoonMovieListPanel.vue';
 import PointCardPanel from '~/components/organisms/PointCardPanel.vue';
 import ShowingMovieListPanel from '~/components/organisms/ShowingMovieListPanel.vue';
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
+import ImageBanners from '~/components/organisms/ImageBanners.vue';
 export default {
-  components: { TabMenu, Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieListPanel, ShowingMovieListPanel },
+  components: { TabMenu, Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieListPanel, ShowingMovieListPanel, ImageBanners },
   name: "IndexPage",
 };
 </script>

@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "Carousel",
   data: () => ({
     model: 0,
     colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],

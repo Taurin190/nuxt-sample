@@ -2,7 +2,7 @@
   <v-app light :style="{ background: $vuetify.theme.themes.light.background }">
     <v-app-bar :clipped-left="clipped" fixed app dark>
       <v-container>
-        <AddressBarLogo />
+        <address-bar-logo />
         <v-spacer />
       </v-container>
     </v-app-bar>
@@ -19,7 +19,9 @@
 </template>
 
 <script>
+import AddressBarLogo from '~/components/molecules/AddressBarLogo.vue';
 export default {
+  components: { AddressBarLogo },
   name: "DefaultLayout",
   data() {
     return {

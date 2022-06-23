@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TabMenu :active=2 />
+    <tab-menu :active=2 />
     <v-row>
       <v-col class="text-center">
         <img src="/v.png" alt="Vuetify.js" class="mb-5" />
@@ -18,7 +18,9 @@
 </template>
 
 <script>
+import TabMenu from '~/components/organisms/TabMenu.vue';
 export default {
+  components: { TabMenu },
   name: "NowShowingPage",
 };
 </script>

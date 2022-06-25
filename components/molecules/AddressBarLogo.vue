@@ -2,7 +2,7 @@
   <img
     class="address-bar-logo"
     alt="Sample CINEMAS"
-    src="/address-bar-logo.png"
+    :src="image_path"
   />
 </template>
 
@@ -15,5 +15,11 @@
 <script>
 export default {
   name: "AddressBarLogo",
+  props: {
+    image_path: {
+      type: String,
+      default: "/address-bar-logo.png",
+    },
+  }
 };
 </script>

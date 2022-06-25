@@ -81,10 +81,7 @@ export default {
     // https://storybook.js.org/docs/react/essentials/introduction
     addons: [
       '@storybook/addon-controls',
-      // '@storybook/addon-notes',
-    ],
-    decorators: [
-      "<div id='__nuxt'><story /></div>'"
+      '@storybook/addon-notes',
     ],
     // storybookのポート指定
     port: 4000,

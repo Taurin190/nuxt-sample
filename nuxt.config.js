@@ -79,7 +79,10 @@ export default {
     // 追加のアドオン
     // デフォルトではstorybook/addon-essentialsが含まれてます、含まれてるaddonは下記リンクを参照
     // https://storybook.js.org/docs/react/essentials/introduction
-    addons: [],
+    addons: [
+      '@storybook/addon-controls',
+      '@storybook/addon-notes',
+    ],
     // storybookのポート指定
     port: 4000,
     // 背景色や表示位置、デバイスの設定など

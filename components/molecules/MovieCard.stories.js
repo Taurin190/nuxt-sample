@@ -1,4 +1,4 @@
-import MovieCard from '~/components/molecules/MovieCard.vue';
+import MovieCard from './MovieCard.vue';
 
 export default {
     title: 'MovieCard',

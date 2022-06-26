@@ -1,4 +1,4 @@
-import AddressBarLogo from '~/components/molecules/AddressBarLogo.vue';
+import AddressBarLogo from './AddressBarLogo.vue';
 export default {
     title: 'AddressBar',
     component: AddressBarLogo,

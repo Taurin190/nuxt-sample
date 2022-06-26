@@ -1,4 +1,4 @@
-import PanelTitle from '~/components/molecules/PanelTitle.vue';
+import PanelTitle from './PanelTitle.vue';
 
 export default {
     title: 'PanelTitle',

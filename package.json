@@ -9,7 +9,8 @@
     "generate": "nuxt generate",
     "test": "jest",
     "storybook": "start-storybook -p 6006 -s ./static",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "dev:server": "json-server --watch ./api/mock/db.json --routes ./api/mock/routes.json --port 3001"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",

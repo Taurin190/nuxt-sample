@@ -1,0 +1,58 @@
+{
+    "movies": {
+        "commingsoon": [
+            {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+        ],
+        "showing": [
+            {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+            {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+        ]
+    },
+    "commingsoon": [
+        {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+    ],
+    "showing": [
+        {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
+        {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+    ],
+    "theaters": [
+        {"id": 1, "name": "富谷", "link": "/theater/tomiya", "area": "東北"},
+        {"id": 2, "name": "佐野", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 3, "name": "高崎", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 4, "name": "菖蒲", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 5, "name": "木場", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 6, "name": "二子玉川", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 6, "name": "二子玉川", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 7, "name": "グランベリーパーク", "link": "/theater/tomiya", "area": "東北"},
+        {"id": 8, "name": "港北", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 9, "name": "川崎", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 10, "name": "湘南", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 11, "name": "ムービル", "link": "/theater/tomiya", "area": "関東"},
+        {"id": 12, "name": "名古屋", "link": "/theater/tomiya", "area": "東海"},
+        {"id": 13, "name": "四日市", "link": "/theater/tomiya", "area": "東海"},
+        {"id": 14, "name": "明和", "link": "/theater/tomiya", "area": "東海"},
+        {"id": 15, "name": "大阪エキスポシティ", "link": "/theater/tomiya", "area": "近畿"},
+        {"id": 16, "name": "箕面", "link": "/theater/tomiya", "area": "近畿"},
+        {"id": 17, "name": "HAT神戸", "link": "/theater/tomiya", "area": "近畿"},
+        {"id": 18, "name": "広島", "link": "/theater/tomiya", "area": "中国"},
+        {"id": 19, "name": "佐賀", "link": "/theater/tomiya", "area": "九州"}
+    ]
+  }

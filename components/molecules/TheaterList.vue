@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12">
+  <v-col class="theater_panel" cols="12">
     <dl>
       <template v-for="(theater, index) in theaters">
         <dt :key="theater.index">
@@ -19,6 +19,11 @@
   </v-col>
 </template>
 <style>
+div.theater_panel {
+  background-color: #4da7d8;
+  color: white;
+  font-weight: 500;
+}
 dt {
   float: left;
 }
@@ -47,9 +52,10 @@ li > a:link {
 <script>
 export default {
   name: "TheaterList",
-  data() {
-    return {
-      theaters: {
+  props: {
+    theaters: {
+      type: Object,
+      default: {
         東北: {
           index: 1,
           list: [
@@ -176,7 +182,7 @@ export default {
           ],
         },
       },
-    };
+    }
   },
 };
 </script>

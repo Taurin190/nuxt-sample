@@ -19,12 +19,19 @@
 <script>
 export default {
   name: "PointCardLink",
-  data() {
-    return {
-      to: "/pointcard",
-      image_path: "/creditcard_nonumber_black.png",
-      description: "５回見たら１回半額！お得な特典がいっぱい！",
-    };
+  props: {
+    to: {
+      type: String,
+      default: "/pointcard",
+    },
+    image_path: {
+      type: String,
+      default: "/creditcard_nonumber_black.png",
+    },
+    description: {
+      type: String,
+      default: "５回見たら１回半額！お得な特典がいっぱい！",
+    },
   },
 };
 </script>

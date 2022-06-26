@@ -32,10 +32,10 @@ span.selected {
 <script>
 export default {
   name: "LoginPageLink",
-  data() {
-    return {
-      theaterSelected: [],
-      theaters: [
+  props: {
+    theaters: {
+      type: Array,
+      default: [
         { header: "東北" },
         { name: "富谷", group: "東北" },
         { header: "関東" },
@@ -62,6 +62,11 @@ export default {
         { header: "九州" },
         { name: "佐賀", group: "九州" },
       ],
+    },
+  },
+  data() {
+    return {
+      theaterSelected: [],
     };
   },
 };

@@ -6,7 +6,7 @@ export default {
     titleTemplate: '%s - nuxt-sample',
     title: 'nuxt-sample',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'jp'
     },
     meta: [
       { charset: 'utf-8' },
@@ -34,12 +34,14 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/composition-api/module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

@@ -13,7 +13,7 @@
     <v-row justify="left" align="center">
       <v-col v-for="movie in movies" :key="movie.index" cols="4">
         <movie-card
-          :to="movie.to"
+          :to="movie.link"
           :image_path="movie.image_path"
           :title="movie.title"
         />
@@ -29,6 +29,9 @@ div.movie-list-panel {
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import MovieCard from "../molecules/MovieCard.vue";
+import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
+
+
 export default {
   components: { PanelTitle, MovieCard },
   name: "ShowingMovieListPanel",
@@ -58,45 +61,55 @@ export default {
         title: "上映中の作品",
         etitle: "NOW SHOWING",
       },
-      movies: [
-        {
-          index: 1,
-          to: "/movies/1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "特撮映画１",
-        },
-        {
-          index: 2,
-          to: "/movies/2",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "太郎と次郎",
-        },
-        {
-          index: 3,
-          to: "/movies/3",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "バケモノの親",
-        },
-        {
-          index: 4,
-          to: "/movies/4",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "ドラさえもん - 最後の道具",
-        },
-        {
-          index: 5,
-          to: "/movies/5",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "極道の嫁 ザ・シネマ",
-        },
-        {
-          index: 6,
-          to: "/movies/6",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          title: "カスタムロボ",
-        },
-      ],
+      // movies: [
+      //   {
+      //     index: 1,
+      //     to: "/movies/1",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "特撮映画１",
+      //   },
+      //   {
+      //     index: 2,
+      //     to: "/movies/2",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "太郎と次郎",
+      //   },
+      //   {
+      //     index: 3,
+      //     to: "/movies/3",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "バケモノの親",
+      //   },
+      //   {
+      //     index: 4,
+      //     to: "/movies/4",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "ドラさえもん - 最後の道具",
+      //   },
+      //   {
+      //     index: 5,
+      //     to: "/movies/5",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "極道の嫁 ザ・シネマ",
+      //   },
+      //   {
+      //     index: 6,
+      //     to: "/movies/6",
+      //     image_path: "/movie_tokusatsu_kaiju.png",
+      //     title: "カスタムロボ",
+      //   },
+      // ],
     };
   },
+  setup() {
+    const { app } = useContext()
+    const movies = useAsync(async () => {
+      const response = await app.$repositories('movie').getShowing()
+      console.log(response);
+      return response.data
+    })
+
+    return { movies };
+  }
 };
 </script>

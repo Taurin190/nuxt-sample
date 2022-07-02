@@ -1,37 +1,37 @@
 {
     "movies": {
         "commingsoon": [
-            {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+            {"id": 1, "title": "特撮映画１", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 2, "title": "太郎と次郎", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 3, "title": "バケモノの親", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png"}
         ],
         "showing": [
-            {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-            {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+            {"id": 1, "title": "特撮映画１", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 2, "title": "太郎と次郎", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 3, "title": "バケモノの親", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png"},
+            {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png"}
         ]
     },
     "commingsoon": [
-        {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+        {"id": 1, "title": "特撮映画１", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/1"},
+        {"id": 2, "title": "太郎と次郎", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/2"},
+        {"id": 3, "title": "バケモノの親", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/3"},
+        {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/4"},
+        {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/5"},
+        {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/6"}
     ],
     "showing": [
-        {"id": 1, "title": "特撮映画１", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 2, "title": "太郎と次郎", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 3, "title": "バケモノの親", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 4, "title": "ドラさえもん - 最後の道具", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 5, "title": "極道の嫁 ザ・シネマ", "thumnail_name": "movie_tokusatsu_kaiju.png"},
-        {"id": 6, "title": "カスタムロボ", "thumnail_name": "movie_tokusatsu_kaiju.png"}
+        {"id": 1, "title": "特撮映画１", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/1"},
+        {"id": 2, "title": "太郎と次郎", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/2"},
+        {"id": 3, "title": "バケモノの親", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/3"},
+        {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/4"},
+        {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/5"},
+        {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/6"}
     ],
     "theaters": [
         {"id": 1, "name": "富谷", "link": "/theater/tomiya", "area": "東北"},

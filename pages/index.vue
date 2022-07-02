@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
+
 import TabMenu from "~/components/organisms/TabMenu.vue";
 import Carousel from "~/components/organisms/Carousel.vue";
 import CampaignListPanel from '~/components/organisms/CampaignListPanel.vue';
@@ -39,5 +41,22 @@ import ImageBanners from '~/components/organisms/ImageBanners.vue';
 export default {
   components: { TabMenu, Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieListPanel, ShowingMovieListPanel, ImageBanners },
   name: "IndexPage",
+  setup() {
+   const { app } = useContext()
+   
+   const theaters = useAsync(async () => {
+      const response = await app.$repositories('theater').get()
+      console.log(response);
+      return response.data
+    })
+
+    const movies = useAsync(async () => {
+      const response = await app.$repositories('movie').getCommingSoon()
+      console.log(response);
+      return response.data
+    })
+
+    return theaters;
+  }
 };
 </script>

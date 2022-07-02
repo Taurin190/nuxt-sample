@@ -1,0 +1,1 @@
+import Vuex, { StoreOptions } from 'vuex';

@@ -12,7 +12,7 @@
       </v-col>
     </v-row>
     <v-row justify="left" align="center">
-      <theater-list />
+      <theater-list :theaters="theaters" />
     </v-row>
   </div>
 </template>
@@ -26,6 +26,8 @@ div.theater-panel {
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import TheaterList from "../molecules/TheaterList.vue";
+import { useContext, useAsync } from "@nuxtjs/composition-api";
+
 export default {
   components: { PanelTitle, TheaterList },
   data() {
@@ -37,6 +39,29 @@ export default {
         etitle: "THEATER",
       },
     };
+  },
+  setup() {
+    const { app } = useContext();
+    const theaters = useAsync(async () => {
+      const response = await app.$repositories("theater").get();
+      console.log(response);
+      var theater_obj = {};
+      response.data.forEach((theater, index) => {
+        if (theater_obj[theater.area] == undefined) {
+          theater_obj[theater.area] = {};
+          theater_obj[theater.area]["list"] = [];
+        }
+
+          theater_obj[theater.area]['list'].push({
+              name: theater.name,
+              ename: theater.name,
+              to: theater.link,
+          });
+      });
+      return theater_obj;
+    });
+
+    return { theaters };
   },
 };
 </script>

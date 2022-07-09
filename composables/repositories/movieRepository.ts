@@ -8,5 +8,8 @@ export const MovieRepository = ($axios: NuxtAxiosInstance) => ({
     },
     getShowing() {
         return $axios.get(`${resource}/showing`)
+    },
+    getMainVisual() {
+        return $axios.get(`${resource}/main_visual`)
     }
 });

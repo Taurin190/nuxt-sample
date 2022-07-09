@@ -1,22 +1,33 @@
 <template>
   <v-carousel v-model="model">
-    <v-carousel-item v-for="(color, i) in colors" :key="color">
-      <v-sheet :color="color" height="100%" tile>
-        <v-row class="fill-height" align="center" justify="center">
-          <div class="text-h2">Slide {{ i + 1 }}</div>
-        </v-row>
-      </v-sheet>
+    <v-carousel-item
+      v-for="movie in movies"
+      :key="movie"
+      :src="movie.image_path"
+      reverse-transition="fade-transition"
+      transition="fade-transition"
+    >
     </v-carousel-item>
   </v-carousel>
 </template>
 
 
 <script>
+import { useContext, useAsync } from "@nuxtjs/composition-api";
 export default {
   name: "Carousel",
   data: () => ({
     model: 0,
-    colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
   }),
+  setup() {
+    const { app } = useContext();
+    const movies = useAsync(async () => {
+      const response = await app.$repositories("movie").getMainVisual();
+      console.log(response);
+      return response.data;
+    });
+
+    return { movies };
+  },
 };
 </script>

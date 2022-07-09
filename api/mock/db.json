@@ -33,6 +33,14 @@
         {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/5"},
         {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/6"}
     ],
+    "main_visual": [
+        {"id": 1, "title": "特撮映画１", "image_path": "https://i.picsum.photos/id/189/400/300.jpg?hmac=pjqZRSJg989Ln0vAYaJSDOfn_5QemhhrFDfFPGHHFqs", "link": "/movies/1"},
+        {"id": 2, "title": "太郎と次郎", "image_path": "https://i.picsum.photos/id/892/400/300.jpg?hmac=-zUpfFmEH2vQLVmyJm-8i1lShDdY7RmU10GwnOMIVDY", "link": "/movies/2"},
+        {"id": 3, "title": "バケモノの親", "image_path": "https://i.picsum.photos/id/905/400/300.jpg?hmac=NHMyI-hsGf8JSjTXt3xTytCYgxqCqKhqZNefIpw8cZY", "link": "/movies/3"},
+        {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "https://i.picsum.photos/id/311/400/300.jpg?hmac=nV4h-PM5TyfJ0z07jjI7GvwJ2V6B-pqqOedvBLbEF0g", "link": "/movies/4"},
+        {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "https://i.picsum.photos/id/776/400/300.jpg?hmac=D4VtS96R7hvTydJabh9Rlw904pCenbZ17mGOo-89kbs", "link": "/movies/5"},
+        {"id": 6, "title": "カスタムロボ", "image_path": "https://i.picsum.photos/id/915/400/300.jpg?hmac=N21sb53KFO1S94JUvxl90JDgExF51_qpKiAhKz_dY9g", "link": "/movies/6"}
+    ],
     "theaters": [
         {"id": 1, "name": "富谷", "link": "/theater/tomiya", "area": "東北"},
         {"id": 2, "name": "佐野", "link": "/theater/tomiya", "area": "関東"},

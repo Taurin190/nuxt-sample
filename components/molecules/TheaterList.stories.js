@@ -1,6 +1,5 @@
 import TheaterList from './TheaterList.vue';
 
-
 export default {
     title: 'TheaterList',
     component: TheaterList,

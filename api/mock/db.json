@@ -17,6 +17,11 @@
             {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png"}
         ]
     },
+    "banners": [
+        {"id": 1, "title": "", "image_path": "https://i.picsum.photos/id/620/300/150.jpg?hmac=PsWxZXwiLVYkYDzbVRXHltbhp4KcWpE8USmQGHVrZEM", "link": "/movies/1"},
+        {"id": 2, "title": "", "image_path": "https://i.picsum.photos/id/211/300/150.jpg?hmac=eVyUkn9HE08sqSFrCjm2RfiErOUVMLPkjKwqbx8JklM", "link": "/movies/2"},
+        {"id": 3, "title": "", "image_path": "https://i.picsum.photos/id/863/300/150.jpg?hmac=1BC0s_rTcY72twlajHXshA1o3Vmqf-0ckmfvaJOFVAk", "link": "/movies/3"}
+    ],
     "commingsoon": [
         {"id": 1, "title": "街の街灯１", "image_path": "https://i.picsum.photos/id/427/150/100.jpg?hmac=0k02pefzqtDWf884HRF240PTPM29UFLrorFh9PI66FA", "link": "/movies/1"},
         {"id": 2, "title": "トンネル", "image_path": "https://i.picsum.photos/id/137/150/100.jpg?hmac=nIdVvlVzefxUgA7ZOkG2UZ5QQqlZ68dF9wMrDwPct3E", "link": "/movies/2"},
@@ -26,12 +31,12 @@
         {"id": 6, "title": "ザ・ジャングル", "image_path": "https://i.picsum.photos/id/958/160/100.jpg?hmac=MjMWVcBODxr2CNShNSO-e4HfgY1tdhueyawc9arUB-k", "link": "/movies/6"}
     ],
     "showing": [
-        {"id": 1, "title": "特撮映画１", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/1"},
-        {"id": 2, "title": "太郎と次郎", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/2"},
-        {"id": 3, "title": "バケモノの親", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/3"},
-        {"id": 4, "title": "ドラさえもん - 最後の道具", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/4"},
-        {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/5"},
-        {"id": 6, "title": "カスタムロボ", "image_path": "movie_tokusatsu_kaiju.png", "link": "/movies/6"}
+        {"id": 1, "title": "ペーパー", "image_path": "https://i.picsum.photos/id/1073/150/100.jpg?hmac=RmBkpfSKHLZ8wCGGEkRNAag-5aF_rFu-PaGr03MFZVI", "link": "/movies/1"},
+        {"id": 2, "title": "色褪せる街", "image_path": "https://i.picsum.photos/id/238/150/100.jpg?hmac=NIIgON_XV3MzCcC34P31FHu6sROtoO5l_zDj6z4BNAQ", "link": "/movies/2"},
+        {"id": 3, "title": "ホワイトボルケーノ", "image_path": "https://i.picsum.photos/id/565/150/100.jpg?hmac=hp8gTxSWhYM-BARRaWd5wYmojFljLopr_GDsuSG1gF0", "link": "/movies/3"},
+        {"id": 4, "title": "海の見える家 - 最後の町", "image_path": "https://i.picsum.photos/id/481/150/100.jpg?hmac=WSLq1MZNY48jSTh9Ed-u1b9-DEGKo7HiXjrvBheCFbI", "link": "/movies/4"},
+        {"id": 5, "title": "ザ・フライングリング", "image_path": "https://i.picsum.photos/id/113/170/87.jpg?hmac=FwGKGcBGr3PQ73jIfowlEHnQH9HVYvJgzV8F4LBz07E", "link": "/movies/5"},
+        {"id": 6, "title": "私の机の上", "image_path": "https://i.picsum.photos/id/370/170/87.jpg?hmac=_AOLdo1Ohe_r4p00bXKbF4-vw1rgLnzLKam3PhrHvhY", "link": "/movies/6"}
     ],
     "main_visual": [
         {"id": 1, "title": "特撮映画１", "image_path": "https://i.picsum.photos/id/189/400/300.jpg?hmac=pjqZRSJg989Ln0vAYaJSDOfn_5QemhhrFDfFPGHHFqs", "link": "/movies/1"},

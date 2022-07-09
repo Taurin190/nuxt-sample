@@ -41,6 +41,14 @@
         {"id": 5, "title": "極道の嫁 ザ・シネマ", "image_path": "https://i.picsum.photos/id/776/400/300.jpg?hmac=D4VtS96R7hvTydJabh9Rlw904pCenbZ17mGOo-89kbs", "link": "/movies/5"},
         {"id": 6, "title": "カスタムロボ", "image_path": "https://i.picsum.photos/id/915/400/300.jpg?hmac=N21sb53KFO1S94JUvxl90JDgExF51_qpKiAhKz_dY9g", "link": "/movies/6"}
     ],
+    "events": [
+        {"id": 1, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/32/220/60.jpg?hmac=MZokQVoCme3QjS5nKe_lrHunz_poLezH_QBJpgrS_V8", "link": "/movies/1"},
+        {"id": 2, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/900/220/60.jpg?hmac=MsoHp2m-Xfvyaa7oVJNYmTgUr5FmM-65M3DgXQKle3k", "link": "/movies/2"},
+        {"id": 3, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/81/220/60.jpg?hmac=r632Rd7kcU3Ospw1OU41bnH0IL95g-Xc-uH9wxJfn-Y", "link": "/movies/3"},
+        {"id": 4, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/866/220/60.jpg?hmac=SydPIFXqP9j-B-WQuL32yYENNrOGRp6VVHlpTxw-1FM", "link": "/movies/4"},
+        {"id": 5, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/958/220/60.jpg?hmac=5fFgAznOwF0DYm5O-gnSWbKMHP_0fDaZNhCEa9vPGLI", "link": "/movies/5"},
+        {"id": 6, "description": "『劇場版　太郎と次郎』抽選で豪華賞品が当たる", "image_path": "https://i.picsum.photos/id/20/220/60.jpg?hmac=k8A5S10z40hm5uuysiQrASti_ptLFP15mP3P9Le1z3o", "link": "/movies/6"}
+    ],
     "theaters": [
         {"id": 1, "name": "富谷", "link": "/theater/tomiya", "area": "東北"},
         {"id": 2, "name": "佐野", "link": "/theater/tomiya", "area": "関東"},

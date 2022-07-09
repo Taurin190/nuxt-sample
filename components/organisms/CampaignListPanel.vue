@@ -11,11 +11,11 @@
       </v-col>
     </v-row>
     <v-row justify="left" align="center">
-      <v-col v-for="campaign in campaign_list" :key="campaign.index" cols="12">
+      <v-col v-for="event in events" :key="event.id" cols="12">
         <campaign-link
-          :to="campaign.to"
-          :description="campaign.description"
-          :image_path="campaign.image_path"
+          :to="event.link"
+          :description="event.description"
+          :image_path="event.image_path"
         />
       </v-col>
     </v-row>
@@ -27,6 +27,7 @@ div.campaign-list-panel {
 }
 </style>
 <script>
+import { useContext, useAsync } from "@nuxtjs/composition-api";
 import CampaignLink from "../molecules/CampaignLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
 export default {
@@ -40,39 +41,17 @@ export default {
         title: "キャンペーン",
         etitle: "CAMPAIGNS",
       },
-      campaign_list: [
-        {
-          index: 1,
-          to: "/events/movie1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          description: "『劇場版　太郎と次郎』抽選で豪華賞品が当たる",
-        },
-        {
-          index: 2,
-          to: "/events/movie1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          description: "『劇場版　太郎と次郎』抽選で豪華賞品が当たる",
-        },
-        {
-          index: 3,
-          to: "/events/movie1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          description: "『劇場版　太郎と次郎』抽選で豪華賞品が当たる",
-        },
-        {
-          index: 4,
-          to: "/events/movie1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          description: "『劇場版　太郎と次郎』抽選で豪華賞品が当たる",
-        },
-        {
-          index: 5,
-          to: "/events/movie1",
-          image_path: "/movie_tokusatsu_kaiju.png",
-          description: "『劇場版　太郎と次郎』抽選で豪華賞品が当たる",
-        },
-      ],
     };
   },
+  setup() {
+    const { app } = useContext()
+    const events = useAsync(async () => {
+      const response = await app.$repositories('event').get()
+      console.log(response);
+      return response.data
+    })
+
+    return { events };
+  }
 };
 </script>

@@ -11,17 +11,15 @@
         <Nuxt />
       </v-container>
     </v-main>
-
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <footer-panel />
   </v-app>
 </template>
 
 <script>
 import AddressBarLogo from '~/components/molecules/AddressBarLogo.vue';
+import FooterPanel from '~/components/organisms/FooterPanel.vue';
 export default {
-  components: { AddressBarLogo },
+  components: { AddressBarLogo, FooterPanel },
   name: "DefaultLayout",
   data() {
     return {

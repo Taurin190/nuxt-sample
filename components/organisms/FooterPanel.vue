@@ -5,6 +5,7 @@
         <v-row>
           <v-col cols="12">
             <address-bar-logo />
+            <i-max-link />
           </v-col>
           <div>
             <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -18,8 +19,9 @@
 </style>
 <script>
 import AddressBarLogo from "~/components/molecules/AddressBarLogo.vue";
+import IMaxLink from '../molecules/IMaxLink.vue';
 export default {
   name: "FooterPanel",
-  components: { AddressBarLogo },
+  components: { AddressBarLogo, IMaxLink },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-footer :absolute="!fixed" app>
+  <v-footer :absolute="!fixed" app class="d-block">
     <v-row class="white">
       <v-container>
         <v-row>
@@ -8,9 +8,20 @@
             <i-max-link />
           </v-col>
           <page-link-list />
-          <div>
-            <span>&copy; {{ new Date().getFullYear() }}</span>
-          </div>
+        </v-row>
+      </v-container>
+    </v-row>
+    <v-row class="grey">
+      <v-container>
+        <v-row>
+          <company-link />
+        </v-row>
+      </v-container>
+    </v-row>
+    <v-row class="grey darken-4">
+      <v-container>
+        <v-row>
+          <copy-write />
         </v-row>
       </v-container>
     </v-row>
@@ -20,10 +31,12 @@
 </style>
 <script>
 import AddressBarLogo from "~/components/molecules/AddressBarLogo.vue";
+import CompanyLink from '../molecules/CompanyLink.vue';
+import CopyWrite from '../molecules/CopyWrite.vue';
 import IMaxLink from "../molecules/IMaxLink.vue";
 import PageLinkList from "../molecules/PageLinkList.vue";
 export default {
   name: "FooterPanel",
-  components: { AddressBarLogo, IMaxLink, PageLinkList },
+  components: { AddressBarLogo, IMaxLink, PageLinkList, CopyWrite, CompanyLink },
 };
 </script>

@@ -4,7 +4,7 @@
       <dd>
         <ul>
           <li v-for="link in links" :key="link.name">
-            <nuxt-link :to="link.to">
+            <nuxt-link :to="link.to" class="footer-link">
               {{ link.name }}
             </nuxt-link>
           </li>
@@ -13,11 +13,14 @@
     </dl>
   </v-col>
 </template>
-<style>
+<style scoped>
 dd {
   margin-left: 0px;
   border-left: 1px solid lightgray;
   margin-bottom: 10px;
+}
+li > a.footer-link {
+  color: black;
 }
 </style>
 <script>

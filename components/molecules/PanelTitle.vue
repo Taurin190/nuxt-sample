@@ -6,7 +6,7 @@
           icon
         }}</v-icon>
       </v-col>
-      <v-col cols="8">
+      <v-col v-bind:cols="list_link ? 7: 9">
         <v-row no-gutters>
           <v-col cols="12">
             <span class="title" v-bind:class="light_mode ? 'light' : ''">{{
@@ -22,6 +22,9 @@
           </v-col>
         </v-row>
       </v-col>
+      <v-col v-if="list_link" class="list-link pl-0 ml-auto text-right">
+          <list-page-link :to="to" />
+      </v-col>
     </v-row>
   </cinema-link>
 </template>
@@ -31,6 +34,9 @@ div.icon {
 }
 div > a {
   text-decoration: none;
+}
+div.list-link {
+    min-width: 60px;
 }
 span.title {
   display: block;
@@ -55,9 +61,10 @@ span.e-title.light {
 </style>
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
+import ListPageLink from './ListPageLink.vue';
 
 export default {
-  components: { CinemaLink },
+  components: { CinemaLink, ListPageLink },
   name: "PanelTitle",
   props: {
     to: {
@@ -80,6 +87,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    list_link: {
+        type: Boolean,
+        default: true,
+    }
   },
 };
 </script>

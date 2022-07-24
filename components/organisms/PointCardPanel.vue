@@ -7,6 +7,7 @@
           :icon="panel_title.icon"
           :title="panel_title.title"
           :etitle="panel_title.etitle"
+          :list_link="false"
         />
         <point-card-link />
         <login-page-link />

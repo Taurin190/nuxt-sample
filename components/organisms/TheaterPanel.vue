@@ -8,6 +8,7 @@
           :title="panel_title.title"
           :etitle="panel_title.etitle"
           :light_mode="true"
+          :list_link="false"
         />
       </v-col>
     </v-row>

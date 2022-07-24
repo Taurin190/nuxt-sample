@@ -29,5 +29,5 @@ export default {
 export const Default = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { MovieCard },
-    template: '<movie-card v-bind="$props" />'
+    template: '<v-col cols="3"><movie-card v-bind="$props" /><v-col>'
 })

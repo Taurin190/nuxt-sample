@@ -1,9 +1,7 @@
 <template>
   <v-col cols="4">
     <cinema-link :to="to">
-    <!-- <nuxt-link :to="to" > -->
-      <v-img :src="image_path" />
-    <!-- </nuxt-link> -->
+      <hover-image :src="image_path" />
     </cinema-link>
   </v-col>
 </template>
@@ -15,8 +13,9 @@ img {
 </style>
 <script>
 import CinemaLink from '../atoms/CinemaLink.vue';
+import HoverImage from '../atoms/HoverImage.vue';
 export default {
-  components: { CinemaLink },
+  components: { CinemaLink, HoverImage },
   name: "ImageBanner",
   props: {
 

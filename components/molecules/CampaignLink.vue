@@ -2,7 +2,7 @@
   <cinema-link :to="to">
     <v-row align="left" dense>
       <v-col cols="6">
-        <v-img :src="image_path" />
+        <hover-image :src="image_path" />
       </v-col>
       <v-col cols="6">
         <span>
@@ -14,11 +14,16 @@
 </template>
 
 <style>
+div.v-image:hover {
+  opacity: 0.8;
+  color: white;
+}
 </style>
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
+import HoverImage from '../atoms/HoverImage.vue';
 export default {
-  components: { CinemaLink },
+  components: { CinemaLink, HoverImage },
   name: "CampaignLink",
   props: {
     to: {

@@ -23,10 +23,10 @@ export default {
     links: {
       type: Array,
       default: [
-          { text: "企業情報", to: "/", index: 1 },
-          { text: "プライバシーポリシー", to: "/", index: 2 },
-          { text: "特定商取引法表記", to: "/", index: 3 }
-          ],
+        { text: "企業情報", to: "/", index: 1 },
+        { text: "プライバシーポリシー", to: "/", index: 2 },
+        { text: "特定商取引法表記", to: "/", index: 3 },
+      ],
     },
     style: {
       type: String,

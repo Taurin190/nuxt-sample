@@ -4,7 +4,7 @@ export default {
     component: CampaignLink,
     argTypes: {
         image_path: {
-            defaultValue: "/movie_tokusatsu_kaiju.png",
+            defaultValue: "https://i.picsum.photos/id/32/220/60.jpg?hmac=MZokQVoCme3QjS5nKe_lrHunz_poLezH_QBJpgrS_V8",
             description: "キャンペーンリンクの画像パス",
         },
         to: {
@@ -21,5 +21,5 @@ export default {
 export const Default = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { CampaignLink },
-    template: '<campaign-link v-bind="$props" />'
+    template: '<v-col cols="8"><campaign-link v-bind="$props" /></v-col>'
 })

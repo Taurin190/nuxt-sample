@@ -1,8 +1,5 @@
 <template>
-  <nuxt-link
-    :to="to"
-    class="center block"
-  >
+  <cinema-link :to="to">
     <v-row align="left" dense>
       <v-col cols="6">
         <v-img :src="image_path" />
@@ -13,13 +10,15 @@
         </span>
       </v-col>
     </v-row>
-  </nuxt-link>
+  </cinema-link>
 </template>
 
 <style>
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
+  components: { CinemaLink },
   name: "CampaignLink",
   props: {
     to: {

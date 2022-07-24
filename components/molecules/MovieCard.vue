@@ -1,8 +1,8 @@
 <template>
-  <nuxt-link :to="to" class="center block text-decoration-none">
+  <cinema-link :to="to" class="center block">
     <v-img class="mb-1" :src="image_path" />
     <span>{{ title }}</span>
-  </nuxt-link>
+  </cinema-link>
 </template>
 <style scoped>
 a {
@@ -17,7 +17,9 @@ div.v-image:hover {
 }
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
+  components: { CinemaLink },
   name: "MovieCard",
   props: {
     to: {

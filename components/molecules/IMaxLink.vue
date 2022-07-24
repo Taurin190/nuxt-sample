@@ -1,13 +1,13 @@
 <template>
-  <v-col cols="5">
-    <nuxt-link 
-    v-for="link in links"
-    :key="link.index"
-    v-bind:class="[link.index > 1 ? 'left-divider': '']"
-    class="black--text px-2 my-2 text-decoration-none" 
-    :to="link.to"
-      >{{ link.text }}</nuxt-link
-    >
+  <v-col cols="6">
+    <cinema-link
+      v-for="link in links"
+      :key="link.index"
+      v-bind:class="[link.index > 1 ? 'left-divider' : '']"
+      class="px-2 my-2"
+      :to="link.to">
+      {{ link.text }}
+    </cinema-link>
   </v-col>
 </template>
 <style scoped>
@@ -16,7 +16,9 @@ a.left-divider {
 }
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
+  components: { CinemaLink },
   name: "IMaxLink",
   props: {
     links: {

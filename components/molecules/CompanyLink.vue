@@ -1,14 +1,14 @@
 <template>
   <v-col cols="12" v-bind:class="style">
-    <nuxt-link
-      class="black--text px-2 text-decoration-none"
-      v-bind:class="[link.index > 1 ? 'left-divider' : '']"
+    <cinema-link
+      class="px-2"
       v-for="link in links"
-      :key="link.text"
       :to="link.to"
+      :key="link.text"
+      v-bind:class="[link.index > 1 ? 'left-divider' : '']"
     >
       {{ link.text }}
-    </nuxt-link>
+    </cinema-link>
   </v-col>
 </template>
 <style scoped>
@@ -17,7 +17,9 @@ a.left-divider {
 }
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
+  components: { CinemaLink },
   name: "CopyWrite",
   props: {
     links: {

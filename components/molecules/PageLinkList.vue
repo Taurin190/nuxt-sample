@@ -5,9 +5,9 @@
         <dd>
           <ul>
             <li v-for="link in page_links" :key="link.name">
-              <nuxt-link :to="link.to" class="footer-link">
+              <cinema-link :to="link.to" class="footer-link">
                 {{ link.name }}
-              </nuxt-link>
+              </cinema-link>
             </li>
           </ul>
         </dd>
@@ -18,9 +18,9 @@
         <dd>
           <ul>
             <li v-for="link in inquiry_links" :key="link.name">
-              <nuxt-link :to="link.to" class="footer-link">
+              <cinema-link :to="link.to" class="footer-link">
                 {{ link.name }}
-              </nuxt-link>
+              </cinema-link>
             </li>
           </ul>
         </dd>
@@ -31,9 +31,9 @@
         <dd>
           <ul>
             <li v-for="link in corporate_links" :key="link.name">
-              <nuxt-link :to="link.to" class="footer-link">
+              <cinema-link :to="link.to" class="footer-link">
                 {{ link.name }}
-              </nuxt-link>
+              </cinema-link>
             </li>
           </ul>
         </dd>
@@ -47,15 +47,15 @@ dd {
   border-left: 1px solid lightgray;
   margin-bottom: 10px;
 }
-li > a.footer-link {
-  color: black;
-}
+
 div.footer-link {
   padding: 0;
 }
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
+  components: { CinemaLink },
   name: "PageLinkList",
   props: {
     page_links: {

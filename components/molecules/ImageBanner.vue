@@ -1,8 +1,10 @@
 <template>
   <v-col cols="4">
-    <nuxt-link :to="to" >
+    <cinema-link :to="to">
+    <!-- <nuxt-link :to="to" > -->
       <v-img :src="image_path" />
-    </nuxt-link>
+    <!-- </nuxt-link> -->
+    </cinema-link>
   </v-col>
 </template>
 <style scoped>
@@ -12,10 +14,13 @@ img {
 }
 </style>
 <script>
+import CinemaLink from '../atoms/CinemaLink.vue';
 export default {
+  components: { CinemaLink },
   name: "ImageBanner",
   props: {
-    to: {
+
+      to: {
       type: String,
       default: "/",
     },

@@ -1,9 +1,5 @@
 <template>
-  <nuxt-link
-    :to="to"
-    class="center block"
-    v-bind:class="light_mode ? 'light' : ''"
-  >
+  <cinema-link :to="to" class="center" v-bind:class="light_mode ? 'light' : ''">
     <v-row align="left">
       <v-col class="icon">
         <v-icon large v-bind:class="light_mode ? 'lightblue' : ''">{{
@@ -27,7 +23,7 @@
         </v-row>
       </v-col>
     </v-row>
-  </nuxt-link>
+  </cinema-link>
 </template>
 <style scoped>
 div.icon {
@@ -58,7 +54,10 @@ span.e-title.light {
 }
 </style>
 <script>
+import CinemaLink from "../atoms/CinemaLink.vue";
+
 export default {
+  components: { CinemaLink },
   name: "PanelTitle",
   props: {
     to: {

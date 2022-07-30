@@ -34,7 +34,7 @@ import { useContext, useAsync } from '@nuxtjs/composition-api'
 
 export default {
   components: { PanelTitle, MovieCard },
-  name: "ShowingMovieListPanel",
+  name: "ShowingMovieTopListPanel",
   props: {
     to: {
       type: String,

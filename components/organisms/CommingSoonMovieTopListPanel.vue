@@ -33,7 +33,7 @@ import { useContext, useAsync } from '@nuxtjs/composition-api'
 
 export default {
   components: { PanelTitle, MovieCard },
-  name: "CommingSoonMovieListPanel",
+  name: "CommingSoonMovieTopListPanel",
   props: {
     to: {
       type: String,

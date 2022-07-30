@@ -13,8 +13,8 @@
         <point-card-panel />
       </v-col>
       <v-col cols="8">
-        <showing-movie-list-panel />
-        <comming-soon-movie-list-panel />
+        <showing-movie-top-list-panel />
+        <comming-soon-movie-top-list-panel />
       </v-col>
     </v-row>
     <v-row>
@@ -31,13 +31,13 @@
 import TabMenu from "~/components/organisms/TabMenu.vue";
 import Carousel from "~/components/organisms/Carousel.vue";
 import CampaignListPanel from '~/components/organisms/CampaignListPanel.vue';
-import CommingSoonMovieListPanel from '~/components/organisms/CommingSoonMovieListPanel.vue';
+import CommingSoonMovieTopListPanel from '~/components/organisms/CommingSoonMovieTopListPanel.vue';
 import PointCardPanel from '~/components/organisms/PointCardPanel.vue';
-import ShowingMovieListPanel from '~/components/organisms/ShowingMovieListPanel.vue';
+import ShowingMovieTopListPanel from '~/components/organisms/ShowingMovieTopListPanel.vue';
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
 import ImageBanners from '~/components/organisms/ImageBanners.vue';
 export default {
-  components: { TabMenu, Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieListPanel, ShowingMovieListPanel, ImageBanners },
+  components: { TabMenu, Carousel, TheaterPanel, CampaignListPanel, PointCardPanel, CommingSoonMovieTopListPanel, ShowingMovieTopListPanel, ImageBanners },
   name: "IndexPage",
 };
 </script>

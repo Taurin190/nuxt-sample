@@ -1,14 +1,22 @@
 <template>
-  <ul>
-    <li v-for="theater in theaters" :key="theater.name">
-      <cinema-link v-if="theater.active">
-        {{ theater.name }}
-      </cinema-link>
-      <span v-else>{{ theater.name }}</span>
-    </li>
-  </ul>
+  <div>
+    <h2 class="mb-1">上映劇場</h2>
+    <ul>
+      <li v-for="theater in theaters" :key="theater.name">
+        <cinema-link v-if="theater.active">
+          {{ theater.name }}
+        </cinema-link>
+        <span v-else>{{ theater.name }}</span>
+      </li>
+    </ul>
+  </div>
 </template>
 <style scoped>
+h2 {
+  font-size: 1.0em;
+  margin-left: 12px;
+  color: darkcyan;
+}
 li {
   list-style-type: none;
   font-size: 0.8em;
@@ -20,16 +28,15 @@ ul {
   padding-left: 5px;
 }
 li > span {
-    color: lightgray;
+  color: lightgray;
 }
 </style>
 <script>
-import CinemaLink from '../atoms/CinemaLink.vue'
+import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
   name: "ShowingTheater",
-  components: {CinemaLink},
-  props: 
-    {
+  components: { CinemaLink },
+  props: {
     theaters: [
       { name: "富谷", active: true },
       { name: "佐野", active: true },

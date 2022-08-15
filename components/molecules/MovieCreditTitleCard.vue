@@ -1,12 +1,16 @@
 <template>
   <cinema-link :to="to">
-    <v-row align="left" dense>
+    <v-row justify="start" align="left" dense no-gutters>
       <v-col cols="4">
         <hover-image class="mb-1" :src="image_path" />
       </v-col>
       <v-col cols="8" align="left">
-        <h2 class="pr-auto">{{ title }}</h2>
-        <list-page-link class="link" :to="to" />
+        <v-col cols="7" class="pr-0 mr-0">
+          <h2>{{ title }}</h2>
+        </v-col>
+        <v-col class="list-link pl-0 ml-auto text-right">
+          <list-page-link class="link" :to="to" />
+        </v-col>
       </v-col>
     </v-row>
   </cinema-link>
@@ -18,6 +22,9 @@ h2 {
 }
 a.link {
   width: 30px;
+}
+div.list-link {
+  width: 100px;
 }
 </style>
 <script>

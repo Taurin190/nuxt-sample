@@ -23,6 +23,14 @@ export default {
             defaultValue: false,
             description: "ライトモードフラグ",
         },
+        director: {
+            defaultValue: "山田花太郎",
+            description: "映画監督の名前",
+        },
+        performers: {
+            defaultValue: "一宮和也、三島ひかり、西川実日子、大手伸也、奈緒子、秋本大我、山川健司・濱田隆一、野川口徹、利軽剛、星井ひな、武山鉄矢",
+            description: "映画出演者の名前",
+        },
     },
 }
 

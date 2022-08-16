@@ -13,16 +13,27 @@
             <list-page-link class="link" :to="to" />
           </v-col>
         </v-row>
+        <v-row no-gutters class="mt-3">
+          <v-col cols="12">
+            <span class="movie-credit mt-1">監督：{{ director }}</span>
+          </v-col>
+          <v-col cols="12">
+            <span class="movie-credit mt-1">出演：{{ performers }}</span>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </cinema-link>
 </template>
 <style scoped>
 h2 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 a.link {
   width: 30px;
+}
+span.movie-credit {
+  font-size: 0.8em;
 }
 </style>
 <script>
@@ -42,6 +53,14 @@ export default {
       default: "",
     },
     title: {
+      type: String,
+      default: "",
+    },
+    director: {
+      type: String,
+      default: "",
+    },
+    performers: {
       type: String,
       default: "",
     },

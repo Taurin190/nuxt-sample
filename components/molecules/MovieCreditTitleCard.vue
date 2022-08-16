@@ -6,7 +6,7 @@
       </v-col>
       <v-col cols="8" align="left">
         <v-row no-gutters>
-          <v-col cols="9" class="pr-0 mr-0">
+          <v-col cols="8" class="pr-0 mr-0">
             <h2>{{ title }}</h2>
           </v-col>
           <v-col class="list-link pl-0 ml-auto text-right">
@@ -27,13 +27,13 @@
 </template>
 <style scoped>
 h2 {
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 a.link {
   width: 30px;
 }
 span.movie-credit {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 </style>
 <script>

@@ -37,5 +37,11 @@ export default {
 export const Default = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { MovieCreditTitleCard },
-    template: '<movie-credit-title-card v-bind="$props" />'
+    template: `
+    <v-row>
+      <v-col cols="8">
+        <movie-credit-title-card v-bind="$props" />
+      </v-col>
+    </v-row>
+    `
 })

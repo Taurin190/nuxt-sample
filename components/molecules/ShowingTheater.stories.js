@@ -24,7 +24,7 @@ export default {
                 { name: "広島", active: true },
                 { name: "佐賀", active: true },
             ],
-            description: "ポイントカードリンクの画像パス",
+            description: "映画を上映している劇場リスト",
         },
     },
 }

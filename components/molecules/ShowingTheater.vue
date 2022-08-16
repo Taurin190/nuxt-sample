@@ -19,7 +19,7 @@ h2 {
 }
 li {
   list-style-type: none;
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-left: 8px;
 }
 ul {

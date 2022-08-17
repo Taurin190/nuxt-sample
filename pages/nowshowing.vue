@@ -1,26 +1,23 @@
 <template>
   <div>
-    <tab-menu :active=2 />
+    <tab-menu :active="2" />
     <v-row>
-      <v-col class="text-center">
-        <img src="/v.png" alt="Vuetify.js" class="mb-5" />
-        <blockquote class="blockquote">
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+      <h1>Sampleシネマズ 上映中の作品</h1>
+      <p>NOW SHOWING</p>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <showing-movie-list-panel />
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import TabMenu from '~/components/organisms/TabMenu.vue';
+import ShowingMovieListPanel from "~/components/organisms/ShowingMovieListPanel.vue";
+import TabMenu from "~/components/organisms/TabMenu.vue";
 export default {
-  components: { TabMenu },
+  components: { TabMenu, ShowingMovieListPanel },
   name: "NowShowingPage",
 };
 </script>

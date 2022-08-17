@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row class="movie-credit-item rounded">
     <v-col cols="8" class="credit-title">
         <movie-credit-title-card
         :to="to"
@@ -15,6 +15,9 @@
   </v-row>
 </template>
 <style scoped>
+div.movie-credit-item {
+    background-color: white;
+}
 div.credit-title {
 border-right: 2px dotted darkgrey;
 }

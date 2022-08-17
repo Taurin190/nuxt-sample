@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article v-for="movie in movies" :key="movie.index">
+    <article v-for="movie in movies" :key="movie.index" class="my-3 py-3">
         <movie-credit-title-list-item
         :to="movie.to"
         :image_path="movie.image_path"

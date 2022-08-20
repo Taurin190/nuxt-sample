@@ -1,10 +1,10 @@
 <template>
   <div>
     <tab-menu :active="2" />
-    <v-row>
-      <h1>Sampleシネマズ 上映中の作品</h1>
-      <p>NOW SHOWING</p>
-    </v-row>
+    <cinema-page-title
+      tilte="Sampleシネマズ 上映中の作品"
+      sub_title="NOW SHOWING"
+    />
     <v-row>
       <v-col cols="12">
         <showing-movie-list-panel />
@@ -14,10 +14,11 @@
 </template>
 
 <script>
+import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
 import ShowingMovieListPanel from "~/components/organisms/ShowingMovieListPanel.vue";
 import TabMenu from "~/components/organisms/TabMenu.vue";
 export default {
-  components: { TabMenu, ShowingMovieListPanel },
+  components: { TabMenu, ShowingMovieListPanel, CinemaPageTitle },
   name: "NowShowingPage",
 };
 </script>

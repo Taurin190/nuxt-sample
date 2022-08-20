@@ -2,7 +2,7 @@
   <div>
     <tab-menu :active="2" />
     <cinema-page-title
-      tilte="Sampleシネマズ 上映中の作品"
+      title="Sampleシネマズ 上映中の作品"
       sub_title="NOW SHOWING"
     />
     <v-row>

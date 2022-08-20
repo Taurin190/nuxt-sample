@@ -5,8 +5,9 @@
         :to="movie.to"
         :image_path="movie.image_path"
         :title="movie.title"
-        director="aaaa"
-        performeers="aaaaaa"
+        :director="movie.director"
+        :performers="movie.performers"
+        :theaters="movie.theaters"
          />
     </article>
   </div>
@@ -21,7 +22,7 @@ export default {
   setup() {
     const { app } = useContext();
     const movies = useAsync(async () => {
-      const response = await app.$repositories("movie").getShowing();
+      const response = await app.$repositories("movie").getShowingWithCredit();
       console.log(response);
       return response.data;
     });

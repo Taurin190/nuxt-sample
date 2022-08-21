@@ -6,6 +6,9 @@ export const MovieRepository = ($axios: NuxtAxiosInstance) => ({
     getCommingSoon() {
         return $axios.get(`${resource}/commingsoon`)
     },
+    getCommingSoonWithCredit() {
+        return $axios.get(`${resource}/commingsoon/detail`)
+    },
     getShowing() {
         return $axios.get(`${resource}/showing`)
     },

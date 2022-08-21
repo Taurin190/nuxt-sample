@@ -6,19 +6,17 @@
       sub_title="COMING SOON"
     />
     <v-row>
-      <v-col cols="12">
-        <showing-movie-list-panel />
-      </v-col>
+      <comming-soon-movie-list-panel />
     </v-row>
   </div>
 </template>
 
 <script>
 import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
-import ShowingMovieListPanel from "~/components/organisms/ShowingMovieListPanel.vue";
-import TabMenu from '~/components/organisms/TabMenu.vue';
+import CommingSoonMovieListPanel from "~/components/organisms/CommingSoonMovieListPanel.vue";
+import TabMenu from "~/components/organisms/TabMenu.vue";
 export default {
-  components: { TabMenu, ShowingMovieListPanel, CinemaPageTitle },
+  components: { TabMenu, CinemaPageTitle, CommingSoonMovieListPanel },
   name: "ComingSoonPage",
 };
 </script>

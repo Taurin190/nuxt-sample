@@ -1,5 +1,6 @@
 {
     "/movies/commingsoon": "/commingsoon",
+    "/movies/commingsoon/detail": "/commingsoon_credit",
     "/movies/showing": "/showing",
     "/movies/showing/detail": "/showing_credit",
     "/movies/main_visual": "/main_visual"

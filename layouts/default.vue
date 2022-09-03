@@ -8,7 +8,11 @@
     </v-app-bar>
     <v-main>
       <v-container>
-        <Nuxt />
+        <v-row>
+          <v-col cols="12" xl="6" lg="10" class="mx-auto">
+            <Nuxt />
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
     <footer-panel />

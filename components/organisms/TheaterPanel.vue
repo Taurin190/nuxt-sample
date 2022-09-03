@@ -1,5 +1,5 @@
 <template>
-  <div class="theater-panel py-5 px-4 mb-5 rounded">
+  <div class="theater-panel py-5 px-4 mb-5 rounded" v-bind:class="theme_color_class">
     <v-row justify="left" align="center">
       <v-col cols="12">
         <panel-title
@@ -13,7 +13,7 @@
       </v-col>
     </v-row>
     <v-row justify="left" align="center">
-      <theater-list :theaters="theaters" />
+      <theater-list :theaters="theaters" :theme_color_class="theme_color_class" />
     </v-row>
   </div>
 </template>
@@ -23,6 +23,19 @@ div.theater-panel {
   color: white;
   font-weight: 500;
 }
+div.theater-panel.light_blue {
+  background-color: #4da7d8;
+  color: white;
+}
+div.theater-panel.dark_yellow {
+  background-color: #ffa000;
+  color: white;
+}
+div.theater-panel.brown {
+  background-color: brown;
+  color: white;
+}
+
 </style>
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
@@ -40,6 +53,12 @@ export default {
         etitle: "THEATER",
       },
     };
+  },
+  props: {
+    theme_color_class: {
+      type: String,
+      default: "light_blue",
+    },
   },
   setup() {
     const { app } = useContext();

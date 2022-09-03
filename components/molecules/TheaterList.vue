@@ -1,5 +1,5 @@
 <template>
-  <v-col class="theater_panel" cols="12">
+  <v-col class="theater_panel" cols="12" :class="theme_color_class">
     <dl>
       <template v-for="(theater, index) in theaters">
         <dt :key="theater.index">
@@ -24,6 +24,19 @@ div.theater_panel {
   color: white;
   font-weight: 500;
 }
+div.theater_panel.light_blue {
+  background-color: #4da7d8;
+  color: white;
+}
+div.theater_panel.dark_yellow {
+  background-color: #FFA000;
+  color: white;
+}
+div.theater_panel.brown {
+  background-color: brown;
+  color: white;
+}
+
 dt {
   float: left;
 }
@@ -182,6 +195,10 @@ export default {
           ],
         },
       },
+    },
+    theme_color_class: {
+      type: String,
+      default: "light_blue"
     }
   },
 };

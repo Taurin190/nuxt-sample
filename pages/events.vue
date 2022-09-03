@@ -10,7 +10,7 @@
         <event-list-panel />
       </v-col>
       <v-col cols="4">
-        <theater-panel />
+        <theater-panel theme_color_class="dark_yellow" />
       </v-col>
     </v-row>
     <v-row>

@@ -19,6 +19,10 @@ export default {
             defaultValue: "上映中の作品",
             description: "カードのタイトル",
         },
+        description: {
+            defaultValue: "お客様からお問い合わせの多いご質問とご回答を掲載しております。お問い合わせの前にぜひ一度ご確認ください。",
+            description: "カードの説明",
+        },
         light_mode: {
             defaultValue: false,
             description: "ライトモードフラグ",
@@ -30,9 +34,9 @@ export const Default = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { SquareCard },
     template: `
-    <v-container>
+    <v-container class="grey">
       <v-row justify="left" align="center">
-        <v-col cols="4">
+        <v-col cols="6">
           <square-card v-bind="$props" />
         </v-col>
       </v-row>

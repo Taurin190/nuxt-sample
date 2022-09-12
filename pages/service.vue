@@ -7,6 +7,7 @@
      class="mb-6"
      />
     <frequent-questions-panel />
+    <theater-service-panel />
   </div>
 </template>
 
@@ -14,8 +15,9 @@
 import TabMenu from "~/components/organisms/TabMenu.vue";
 import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
 import FrequentQuestionsPanel from '~/components/organisms/FrequentQuestionsPanel.vue';
+import TheaterServicePanel from '~/components/organisms/TheaterServicePanel.vue';
 export default {
-  components: { TabMenu, CinemaPageTitle, FrequentQuestionsPanel },
+  components: { TabMenu, CinemaPageTitle, FrequentQuestionsPanel, TheaterServicePanel },
   name: "ServicePage",
 };
 </script>

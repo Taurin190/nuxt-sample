@@ -6,8 +6,8 @@
      sub_title="SERVICE INFO" 
      class="mb-6"
      />
-    <frequent-questions-panel />
-    <theater-service-panel />
+    <frequent-questions-panel class="my-3"/>
+    <theater-service-panel class="my-3" />
   </div>
 </template>
 

@@ -3,5 +3,6 @@
     "/movies/commingsoon/detail": "/commingsoon_credit",
     "/movies/showing": "/showing",
     "/movies/showing/detail": "/showing_credit",
-    "/movies/main_visual": "/main_visual"
+    "/movies/main_visual": "/main_visual",
+    "/services/theater": "/service_theater"
 }

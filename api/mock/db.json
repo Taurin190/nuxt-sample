@@ -1649,6 +1649,43 @@
             "link": "/movies/6"
         }
     ],
+    "service_theater": [
+        {
+            "id": 1,
+            "title": "シネマポイントカード",
+            "description": "5回観たら1回無料！その他スペシャルシートが毎日特別価格でのご利用や会員のみの割引サービスなどお得な会員特典がいっぱい！",
+            "image_path": "/creditcard_nonumber_black.png",
+            "link": "/movies/1"
+        },
+        {
+            "id": 2,
+            "title": "コンセッションおすすめ商品",
+            "description": "Sampleシネマズでしか味わえないおすすめ商品をご紹介します",
+            "image_path": "https://i.picsum.photos/id/900/220/60.jpg?hmac=MsoHp2m-Xfvyaa7oVJNYmTgUr5FmM-65M3DgXQKle3k",
+            "link": "/movies/2"
+        },
+        {
+            "id": 3,
+            "title": "アシストサービス",
+            "description": "字幕ガイド用スマートグラスの貸出をはじめ、ワンモアサービスはお気軽にお声がけください。",
+            "image_path": "https://i.picsum.photos/id/81/220/60.jpg?hmac=r632Rd7kcU3Ospw1OU41bnH0IL95g-Xc-uH9wxJfn-Y",
+            "link": "/movies/3"
+        },
+        {
+            "id": 4,
+            "title": "ふれあいシネマ",
+            "description": "小さなお子様の映画デビューを応援する「ふれあいシネマ」。",
+            "image_path": "https://i.picsum.photos/id/866/220/60.jpg?hmac=SydPIFXqP9j-B-WQuL32yYENNrOGRp6VVHlpTxw-1FM",
+            "link": "/movies/4"
+        },
+        {
+            "id": 5,
+            "title": "団体鑑賞",
+            "description": "子ども会、学校、職場等々団体でご鑑賞をお考えの方のご希望にお応えします。 ",
+            "image_path": "https://i.picsum.photos/id/958/220/60.jpg?hmac=5fFgAznOwF0DYm5O-gnSWbKMHP_0fDaZNhCEa9vPGLI",
+            "link": "/movies/5"
+        }
+    ],
     "theaters": [
         {
             "id": 1,

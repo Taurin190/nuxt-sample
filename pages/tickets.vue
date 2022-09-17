@@ -7,6 +7,7 @@
         <theater-panel theme_color_class="brown" />
       </v-col>
       <v-col cols="8">
+        <ticket-system-panel />
       </v-col>
     </v-row>
   </div>
@@ -16,8 +17,9 @@
 import TabMenu from "~/components/organisms/TabMenu.vue";
 import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
 import TheaterPanel from '~/components/organisms/TheaterPanel.vue';
+import TicketSystemPanel from '~/components/organisms/TicketSystemPanel.vue';
 export default {
-  components: { TabMenu, CinemaPageTitle, TheaterPanel },
+  components: { TabMenu, CinemaPageTitle, TheaterPanel, TicketSystemPanel },
   name: "TicketsPage",
 };
 </script>

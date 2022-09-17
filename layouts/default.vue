@@ -9,7 +9,7 @@
     <v-main>
       <v-container>
         <v-row>
-          <v-col cols="12" xl="6" lg="10" class="mx-auto">
+          <v-col cols="12" xl="6" lg="10" class="mx-auto movie-layout">
             <Nuxt />
           </v-col>
         </v-row>
@@ -18,7 +18,11 @@
     <footer-panel />
   </v-app>
 </template>
-
+<style scoped>
+div.movie-layout {
+  min-width: 870px;
+}
+</style>
 <script>
 import AddressBarLogo from '~/components/molecules/AddressBarLogo.vue';
 import FooterPanel from '~/components/organisms/FooterPanel.vue';

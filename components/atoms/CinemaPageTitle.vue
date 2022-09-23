@@ -1,5 +1,5 @@
 <template>
-  <v-row align-content="center pt-5">
+  <v-row class="center pt-5">
     <h1 class="grey--text text--darken-2">{{ title }}</h1>
     <p class="grey--text text--darken-1 font-weight-bold mt-auto mb-1 ml-5">
       {{ sub_title }}

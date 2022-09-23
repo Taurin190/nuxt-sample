@@ -1,10 +1,10 @@
 <template>
   <cinema-link :to="to">
-    <v-row justify="start" align="left" dense>
+    <v-row justify="start" dense>
       <v-col cols="4">
         <hover-image class="mb-1" :src="image_path" />
       </v-col>
-      <v-col cols="8" align="left">
+      <v-col cols="8">
         <v-row no-gutters>
           <v-col cols="8" class="pr-0 mr-0">
             <h2>{{ title }}</h2>

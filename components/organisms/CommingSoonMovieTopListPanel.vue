@@ -1,6 +1,6 @@
 <template>
   <div class="movie-list-panel py-5 mb-5 px-4 rounded">
-    <v-row justify="left" align="center">
+    <v-row>
       <v-col cols="12">
         <panel-title
           :to="panel_title.to"
@@ -10,7 +10,7 @@
         />
       </v-col>
     </v-row>
-    <v-row justify="left" align="center">
+    <v-row>
       <v-col v-for="movie in movies" :key="movie.index" cols="4">
         <movie-card
           :to="movie.to"

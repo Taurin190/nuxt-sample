@@ -23,7 +23,7 @@ export default {
   props: {
     links: {
       type: Array,
-      default: [
+      default: () => [
         { text: "HOME", to: "/", index: 1 },
         { text: "IMAX", to: "/imax", index: 2 },
         { text: "4DX/ScreenX/4DX Screen", to: "/4dx", index: 3 },

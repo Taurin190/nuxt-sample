@@ -39,7 +39,7 @@ export const Default = (args, { argTypes }) => ({
     components: { PanelTitle },
     template: `
     <v-container>
-      <v-row justify="left" align="center">
+      <v-row justify="left">
         <v-col cols="12">
           <panel-title v-bind="$props" />
         </v-col>

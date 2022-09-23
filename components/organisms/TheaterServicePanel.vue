@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="mb-4">劇場サービス</h2>
-    <v-row align="left">
+    <v-row>
       <v-col cols="6" v-for="service in services" :key="service.title">
         <square-card
           :title="service.title"

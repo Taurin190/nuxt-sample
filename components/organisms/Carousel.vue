@@ -2,7 +2,7 @@
   <v-carousel v-model="model">
     <v-carousel-item
       v-for="movie in movies"
-      :key="movie"
+      :key="movie.id"
       :src="movie.image_path"
       reverse-transition="fade-transition"
       transition="fade-transition"

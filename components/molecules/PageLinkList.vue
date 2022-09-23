@@ -60,7 +60,7 @@ export default {
   props: {
     page_links: {
       type: Array,
-      default: [
+      default: () => [
         {
           name: "上映中の作品",
           to: "/nowshowing",
@@ -85,7 +85,7 @@ export default {
     },
     corporate_links: {
       type: Array,
-      default: [
+      default: () => [
         {
           name: "お問い合わせ",
           to: "/nowshowing",
@@ -98,7 +98,7 @@ export default {
     },
     inquiry_links: {
       type: Array,
-      default: [
+      default: () => [
         {
           name: "採用情報",
           to: "/nowshowing",

@@ -1,6 +1,6 @@
 <template>
   <cinema-link :to="to" class="center" v-bind:class="light_mode ? 'light' : ''">
-    <v-row align="left">
+    <v-row>
       <v-col class="icon">
         <v-icon large v-bind:class="light_mode ? 'lightblue' : ''">{{
           icon

@@ -1,6 +1,6 @@
 <template>
   <div class="theater-panel py-5 px-4 mb-5 rounded" v-bind:class="theme_color_class">
-    <v-row justify="left" align="center">
+    <v-row>
       <v-col cols="12">
         <panel-title
           :to="panel_title.to"
@@ -12,7 +12,7 @@
         />
       </v-col>
     </v-row>
-    <v-row justify="left" align="center">
+    <v-row>
       <theater-list :theaters="theaters" :theme_color_class="theme_color_class" />
     </v-row>
   </div>

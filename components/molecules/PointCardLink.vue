@@ -2,9 +2,8 @@
   <nuxt-link
     :to="to"
     class="center block"
-    v-bind:class="light_mode ? 'light' : ''"
   >
-    <v-row align="left" dense>
+    <v-row dense>
       <v-col cols="6">
         <v-img :src="image_path" />
       </v-col>

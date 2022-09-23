@@ -1,6 +1,6 @@
 <template>
   <cinema-link :to="to">
-    <v-row align="left" dense>
+    <v-row dense>
       <v-col cols="6">
         <hover-image :src="image_path" />
       </v-col>

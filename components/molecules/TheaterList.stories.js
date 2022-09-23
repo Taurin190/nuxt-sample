@@ -12,7 +12,7 @@ export const Default = (args, { argTypes }) => ({
     components: { TheaterList },
     template: `
     <v-container>
-      <v-row justify="left" align="center">
+      <v-row justify="left">
         <v-col cols="6">
           <theater-list v-bind="$props" />
         </v-col>
@@ -26,7 +26,7 @@ export const Yellow = (args, { argTypes }) => ({
   components: { TheaterList },
   template: `
   <v-container>
-    <v-row justify="left" align="center">
+    <v-row justify="left">
       <v-col cols="6">
         <theater-list theme_color_class="dark_yellow" />
       </v-col>
@@ -40,7 +40,7 @@ export const Brown = (args, { argTypes }) => ({
   components: { TheaterList },
   template: `
   <v-container>
-    <v-row justify="left" align="center">
+    <v-row>
       <v-col cols="6">
         <theater-list theme_color_class="brown" />
       </v-col>

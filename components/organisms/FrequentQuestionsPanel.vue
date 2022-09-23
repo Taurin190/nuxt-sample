@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="mb-4">よくあるご質問</h2>
-    <v-row align="left">
+    <v-row>
       <v-col cols="6">
         <square-card
           title="よくあるご質問"

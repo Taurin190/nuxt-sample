@@ -1,7 +1,7 @@
 <template>
   <div>
     <tab-menu :active="1" />
-    <v-row justify="center" align="center">
+    <v-row>
       <v-col cols="12">
         <carousel />
       </v-col>

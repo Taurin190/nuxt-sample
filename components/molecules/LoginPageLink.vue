@@ -4,7 +4,7 @@
     <v-select
       v-model="theaterSelected"
       :items="theaters"
-      box
+      filled
       chips
       label="劇場を選ぶ"
       outlined
@@ -35,7 +35,7 @@ export default {
   props: {
     theaters: {
       type: Array,
-      default: [
+      default: () => [
         { header: "東北" },
         { name: "富谷", group: "東北" },
         { header: "関東" },

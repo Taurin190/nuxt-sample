@@ -1,7 +1,7 @@
 <template>
-  <v-row align="center">
+  <v-row>
       <image-banner v-for="banner in banners"
-      :key="banner"
+      :key="banner.link"
       :to="banner.link"
       :image_path="banner.image_path"/>
   </v-row>

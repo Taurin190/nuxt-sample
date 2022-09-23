@@ -35,7 +35,7 @@ export const Default = (args, { argTypes }) => ({
     components: { SquareCard },
     template: `
     <v-container class="grey">
-      <v-row justify="left" align="center">
+      <v-row justify="left">
         <v-col cols="6">
           <square-card v-bind="$props" />
         </v-col>

@@ -38,5 +38,10 @@ import PageLinkList from "../molecules/PageLinkList.vue";
 export default {
   name: "FooterPanel",
   components: { AddressBarLogo, IMaxLink, PageLinkList, CopyWrite, CompanyLink },
+  data() {
+    return {
+      fixed: false
+    }
+  }
 };
 </script>

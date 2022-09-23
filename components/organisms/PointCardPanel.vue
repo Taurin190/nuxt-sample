@@ -1,6 +1,6 @@
 <template>
   <div class="point-card-panel py-5 mb-5 px-4 rounded">
-    <v-row justify="left" align="center">
+    <v-row>
       <v-col cols="12">
         <panel-title
           :to="panel_title.to"

@@ -34,7 +34,7 @@ export const Default = (args, { argTypes }) => ({
     components: { ShowingTheater },
     template: `
     <v-container>
-      <v-row justify="left" align="center">
+      <v-row justify="left">
         <v-col cols="4">
           <showing-theater v-bind="$props" />
         </v-col>

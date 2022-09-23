@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" v-bind:class="style">
+  <v-col cols="12" class="white--text text-center">
     <cinema-link
       class="px-2"
       v-for="link in links"
@@ -24,15 +24,11 @@ export default {
   props: {
     links: {
       type: Array,
-      default: [
+      default: () => [
         { text: "企業情報", to: "/", index: 1 },
         { text: "プライバシーポリシー", to: "/", index: 2 },
         { text: "特定商取引法表記", to: "/", index: 3 },
       ],
-    },
-    style: {
-      type: String,
-      default: "white--text text-center",
     },
   },
 };

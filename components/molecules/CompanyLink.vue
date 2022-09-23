@@ -20,7 +20,7 @@ a.left-divider {
 import CinemaLink from "../atoms/CinemaLink.vue";
 export default {
   components: { CinemaLink },
-  name: "CopyWrite",
+  name: "CompanyLink",
   props: {
     links: {
       type: Array,

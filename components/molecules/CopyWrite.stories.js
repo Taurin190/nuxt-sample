@@ -6,10 +6,6 @@ export default {
         text: {
             type: String,
             default: "© 2022 Taurin190.com.",
-        },
-        style: {
-            type: String,
-            default: "white--text text-center"
         }
     },
 }

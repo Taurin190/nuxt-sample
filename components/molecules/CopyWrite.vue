@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" v-bind:class="style"> {{ text }} </v-col>
+  <v-col cols="12" class="white--text text-center"> {{ text }} </v-col>
 </template>
 <style scoped>
 a.left-divider {
@@ -14,10 +14,6 @@ export default {
       type: String,
       default: "© 2022 Taurin190.com.",
     },
-    style: {
-        type: String,
-        default: "white--text text-center"
-    }
   },
 };
 </script>

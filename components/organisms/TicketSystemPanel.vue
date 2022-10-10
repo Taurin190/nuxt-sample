@@ -29,10 +29,10 @@
     </div>
     <v-row>
       <v-col cols="6">
-        <nuxt-link to="/">チケット購入方法 ></nuxt-link>
+        <cinema-link-button to="/">チケット購入方法 ></cinema-link-button>
       </v-col>
       <v-col cols="6">
-        <nuxt-link to="/">よくあるご質問 ></nuxt-link>
+        <cinema-link-button to="/">よくあるご質問 ></cinema-link-button>
       </v-col>
     </v-row>
   </div>
@@ -47,8 +47,9 @@ import PanelTitle from "../molecules/PanelTitle.vue";
 import SquareCard from "../molecules/SquareCard.vue";
 import { useContext, useAsync } from "@nuxtjs/composition-api";
 import ExplanationCard from "../molecules/ExplanationCard.vue";
+import CinemaLinkButton from '../atoms/CinemaLinkButton.vue';
 export default {
-  components: { SquareCard, PanelTitle, ExplanationCard },
+  components: { SquareCard, PanelTitle, ExplanationCard, CinemaLinkButton },
   name: "TheaterServicePanel",
   setup() {
     const { app } = useContext();

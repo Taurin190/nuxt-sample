@@ -16,18 +16,17 @@ import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
 import CommingSoonMovieListPanel from "~/components/organisms/CommingSoonMovieListPanel.vue";
 import MovieDetailPanel from '~/components/organisms/MovieDetailPanel.vue';
 import TabMenu from "~/components/organisms/TabMenu.vue";
-import useRoute from 'vue-router';
-export default {
+import { defineComponent, useRoute } from '@nuxtjs/composition-api'
+export default defineComponent({
   components: { TabMenu, CinemaPageTitle, CommingSoonMovieListPanel, MovieDetailPanel },
   name: "ComingSoonPage",
   setup() {
-    //   route = useRoute();
-    //   this.id = route.params;
-  },
-  data() {
-    return {
-        id: 0
-    }
+      const route = useRoute();
+      const id = route.value.params.id;
+      
+      return {
+          id,
+      }
   }
-};
+});
 </script>

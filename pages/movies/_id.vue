@@ -1,24 +1,44 @@
 <template>
   <div>
     <tab-menu :active="3" />
-    <movie-detail-panel :id="id" />
+    <cinema-page-title :title="movie.title" :sub_title="movie.sub_title" />
+    <v-row>
+      <v-col cols="8">
+        <v-img :src="movie.image_path" />
+      </v-col>
+      <v-col cols="4">
+        <theater-panel theme_color_class="dark_yellow" />
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
-import MovieDetailPanel from "~/components/organisms/MovieDetailPanel.vue";
+import CinemaPageTitle from "~/components/atoms/CinemaPageTitle.vue";
 import TabMenu from "~/components/organisms/TabMenu.vue";
-import { defineComponent, useRoute } from "@nuxtjs/composition-api";
+import {
+  defineComponent,
+  useRoute,
+  useContext,
+  useAsync,
+} from "@nuxtjs/composition-api";
+import TheaterPanel from "~/components/organisms/TheaterPanel.vue";
+
 export default defineComponent({
-  components: { TabMenu, MovieDetailPanel },
+  components: { TabMenu, CinemaPageTitle, TheaterPanel },
   name: "ComingSoonPage",
   setup() {
     const route = useRoute();
     const id = route.value.params.id;
 
-    return {
-      id,
-    };
+    const { app } = useContext();
+    const movie = useAsync(async () => {
+      const response = await app.$repositories("movie").getMovieDetail(id);
+      console.log(response);
+      return response.data;
+    });
+
+    return { movie };
   },
 });
 </script>

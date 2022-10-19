@@ -1573,6 +1573,13 @@
             ]
         }
     ],
+    "movie_detail":  {
+        "id": 1,
+        "title": "特撮映画１",
+        "sub_title": "SPECIAL EFFECTS 1",
+        "image_path": "https://i.picsum.photos/id/189/400/300.jpg?hmac=pjqZRSJg989Ln0vAYaJSDOfn_5QemhhrFDfFPGHHFqs",
+        "link": "/movies/1"
+    },
     "main_visual": [
         {
             "id": 1,

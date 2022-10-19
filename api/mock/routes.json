@@ -4,5 +4,6 @@
     "/movies/showing": "/showing",
     "/movies/showing/detail": "/showing_credit",
     "/movies/main_visual": "/main_visual",
+    "/movies/1": "/movie_detail",
     "/services/theater": "/service_theater"
 }

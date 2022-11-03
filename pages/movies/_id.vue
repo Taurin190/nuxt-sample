@@ -7,6 +7,7 @@
         <v-img :src="movie.image_path" />
       </v-col>
       <v-col cols="4">
+        <road-show-card />
         <theater-panel theme_color_class="dark_yellow" />
       </v-col>
     </v-row>
@@ -23,9 +24,10 @@ import {
   useAsync,
 } from "@nuxtjs/composition-api";
 import TheaterPanel from "~/components/organisms/TheaterPanel.vue";
+import RoadShowCard from "~/components/molecules/RoadShowCard.vue";
 
 export default defineComponent({
-  components: { TabMenu, CinemaPageTitle, TheaterPanel },
+  components: { TabMenu, CinemaPageTitle, TheaterPanel, RoadShowCard },
   name: "ComingSoonPage",
   setup() {
     const route = useRoute();

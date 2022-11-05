@@ -5,6 +5,7 @@
     <v-row>
       <v-col cols="8">
         <v-img :src="movie.image_path" class="mb-4" />
+        <movie-introduction-panel class="mb-4" />
         <movie-credit-panel />
       </v-col>
       <v-col cols="4">
@@ -27,9 +28,10 @@ import {
 import TheaterPanel from "~/components/organisms/TheaterPanel.vue";
 import RoadShowCard from "~/components/molecules/RoadShowCard.vue";
 import MovieCreditPanel from "~/components/organisms/MovieCreditPanel.vue";
+import MovieIntroductionPanel from "~/components/organisms/MovieIntroductionPanel.vue";
 
 export default defineComponent({
-  components: { TabMenu, CinemaPageTitle, TheaterPanel, RoadShowCard, MovieCreditPanel },
+  components: { TabMenu, CinemaPageTitle, TheaterPanel, RoadShowCard, MovieCreditPanel, MovieIntroductionPanel },
   name: "ComingSoonPage",
   setup() {
     const route = useRoute();

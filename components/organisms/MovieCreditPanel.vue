@@ -13,7 +13,7 @@
     </v-row>
     <v-row>
         <v-col cols="12">
-            {{ movie_introduction }}
+            <p v-html="movie_data"></p>
         </v-col>        
     </v-row>
   </div>
@@ -36,12 +36,13 @@ export default defineComponent({
     const panel_title = {
       to: "/",
       icon: "mdi-movie-open",
-      title: "イントロダクション",
-      etitle: "INTRODUCTION",
+      title: "作品データ",
+      etitle: "DATA",
     };
+
+    const movie_data = "監督： アンソニー・ソロー、ショー・ルッソ<br>出演： クリス・エミリー 、ロバート･ブラウン. 、スカーレット・ハンセン";
     
-    const movie_introduction = "マルベルコミック原作「キャプテン・インド」シリーズの第3作。マルベルヒーローが集結した「アーベンジャー　エイジ・オブ・ウルトロン」後の物語となり、キャプテン・インドとアイアン男という「アベンジャーズ」を代表する2人のヒーローの対立と友情を描く。";
-    return { panel_title, movie_introduction };
+    return { panel_title, movie_data };
   },
 });
 </script>

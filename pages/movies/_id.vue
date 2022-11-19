@@ -13,6 +13,9 @@
           <road-show-card />
           <theater-panel theme_color_class="dark_yellow" />
         </v-col>
+        <v-col cols="12">
+          <showing-schedule-panel />
+        </v-col>
       </v-row>
     </div>
   </div>
@@ -31,6 +34,7 @@ import TheaterPanel from "~/components/organisms/TheaterPanel.vue";
 import RoadShowCard from "~/components/molecules/RoadShowCard.vue";
 import MovieCreditPanel from "~/components/organisms/MovieCreditPanel.vue";
 import MovieIntroductionPanel from "~/components/organisms/MovieIntroductionPanel.vue";
+import ShowingSchedulePanel from "~/components/organisms/ShowingSchedulePanel.vue";
 
 export default defineComponent({
   components: {
@@ -40,6 +44,7 @@ export default defineComponent({
     RoadShowCard,
     MovieCreditPanel,
     MovieIntroductionPanel,
+    ShowingSchedulePanel,
   },
   name: "ComingSoonPage",
   setup() {

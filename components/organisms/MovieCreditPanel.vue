@@ -1,5 +1,5 @@
 <template>
-  <div class="movie-credit-panel py-5 mb-5 px-4 rounded">
+  <card-tile>
     <v-row>
       <v-col cols="12">
         <panel-title
@@ -12,25 +12,19 @@
       </v-col>
     </v-row>
     <v-row>
-        <v-col cols="12">
-            <p v-html="movie_data"></p>
-        </v-col>        
+      <v-col cols="12">
+        <p v-html="movie_data"></p>
+      </v-col>
     </v-row>
-  </div>
+  </card-tile>
 </template>
-<style scoped>
-div.movie-credit-panel {
-  background-color: white;
-}
-</style>
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
-import {
-  defineComponent
-} from "@nuxtjs/composition-api";
+import { defineComponent } from "@nuxtjs/composition-api";
+import CardTile from "../atoms/CardTile.vue";
 
 export default defineComponent({
-  components: { PanelTitle },
+  components: { PanelTitle, CardTile },
   name: "MovieCreditPanel",
   setup() {
     const panel_title = {
@@ -40,8 +34,9 @@ export default defineComponent({
       etitle: "DATA",
     };
 
-    const movie_data = "監督： アンソニー・ソロー、ショー・ルッソ<br>出演： クリス・エミリー 、ロバート･ブラウン. 、スカーレット・ハンセン";
-    
+    const movie_data =
+      "監督： アンソニー・ソロー、ショー・ルッソ<br>出演： クリス・エミリー 、ロバート･ブラウン. 、スカーレット・ハンセン";
+
     return { panel_title, movie_data };
   },
 });

@@ -1,5 +1,5 @@
 <template>
-  <div class="point-card-panel py-5 mb-5 px-4 rounded">
+  <card-tile>
     <v-row>
       <v-col cols="12">
         <panel-title
@@ -11,20 +11,16 @@
         />
       </v-col>
     </v-row>
-  </div>
+  </card-tile>
 </template>
-<style scoped>
-div.point-card-panel {
-  background-color: white;
-}
-</style>
 <script>
 import { defineComponent } from "@nuxtjs/composition-api";
+import CardTile from "../atoms/CardTile.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
 
 export default defineComponent({
   name: "ShowingSchedulePanel",
-  components: { PanelTitle },
+  components: { PanelTitle, CardTile },
   props: {},
   setup() {
     const panel_title = {

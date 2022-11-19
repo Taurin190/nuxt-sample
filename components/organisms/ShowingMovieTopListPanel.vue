@@ -1,5 +1,5 @@
 <template>
-  <div class="movie-list-panel py-5 mb-5 px-4 rounded">
+  <card-tile>
     <v-row>
       <v-col cols="12">
         <panel-title
@@ -19,21 +19,16 @@
         />
       </v-col>
     </v-row>
-  </div>
+  </card-tile>
 </template>
-<style scoped>
-div.movie-list-panel {
-  background-color: white;
-}
-</style>
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import MovieCard from "../molecules/MovieCard.vue";
-import { useContext, useAsync } from '@nuxtjs/composition-api'
-
+import { useContext, useAsync } from "@nuxtjs/composition-api";
+import CardTile from "../atoms/CardTile.vue";
 
 export default {
-  components: { PanelTitle, MovieCard },
+  components: { PanelTitle, MovieCard, CardTile },
   name: "ShowingMovieTopListPanel",
   props: {
     to: {
@@ -64,14 +59,14 @@ export default {
     };
   },
   setup() {
-    const { app } = useContext()
+    const { app } = useContext();
     const movies = useAsync(async () => {
-      const response = await app.$repositories('movie').getShowing()
+      const response = await app.$repositories("movie").getShowing();
       console.log(response);
-      return response.data
-    })
+      return response.data;
+    });
 
     return { movies };
-  }
+  },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="point-card-panel py-5 mb-5 px-4 rounded">
+  <card-tile>
     <v-row>
       <v-col cols="12">
         <panel-title
@@ -13,7 +13,7 @@
         <login-page-link />
       </v-col>
     </v-row>
-  </div>
+  </card-tile>
 </template>
 <style scoped>
 div.point-card-panel {
@@ -21,11 +21,12 @@ div.point-card-panel {
 }
 </style>
 <script>
+import CardTile from "../atoms/CardTile.vue";
 import LoginPageLink from "../molecules/LoginPageLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
 import PointCardLink from "../molecules/PointCardLink.vue";
 export default {
-  components: { PanelTitle, PointCardLink, LoginPageLink },
+  components: { PanelTitle, PointCardLink, LoginPageLink, CardTile },
   name: "PointCardPanel",
   data() {
     return {

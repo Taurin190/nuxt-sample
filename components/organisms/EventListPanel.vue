@@ -1,5 +1,5 @@
 <template>
-  <div class="campaign-list-panel py-5 mb-5 px-4 rounded">
+  <card-tile>
     <v-row>
       <v-col cols="12">
         <panel-title
@@ -19,19 +19,15 @@
         />
       </v-col>
     </v-row>
-  </div>
+  </card-tile>
 </template>
-<style scoped>
-div.campaign-list-panel {
-  background-color: white;
-}
-</style>
 <script>
 import { useContext, useAsync } from "@nuxtjs/composition-api";
 import CampaignLink from "../molecules/CampaignLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
+import CardTile from "../atoms/CardTile.vue";
 export default {
-  components: { PanelTitle, CampaignLink },
+  components: { PanelTitle, CampaignLink, CardTile },
   name: "EventListPanel",
   data() {
     return {
@@ -44,14 +40,14 @@ export default {
     };
   },
   setup() {
-    const { app } = useContext()
+    const { app } = useContext();
     const events = useAsync(async () => {
-      const response = await app.$repositories('event').get()
+      const response = await app.$repositories("event").get();
       console.log(response);
-      return response.data
-    })
+      return response.data;
+    });
 
     return { events };
-  }
+  },
 };
 </script>

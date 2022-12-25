@@ -13,13 +13,14 @@
 
 
 <script>
-import { useContext, useAsync } from "@nuxtjs/composition-api";
-export default {
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "Carousel",
   data: () => ({
     model: 0,
   }),
   setup() {
+    const model = 0;
     const { app } = useContext();
     const movies = useAsync(async () => {
       const response = await app.$repositories("movie").getMainVisual();
@@ -29,5 +30,5 @@ export default {
 
     return { movies };
   },
-};
+});
 </script>

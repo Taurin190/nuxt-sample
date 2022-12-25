@@ -17,9 +17,9 @@
 </template>
 <script>
 import MovieCreditTitleListItem from '../molecules/MovieCreditTitleListItem.vue';
-import { useContext, useAsync } from '@nuxtjs/composition-api'
+import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 
-export default {
+export default defineComponent({
   components: { MovieCreditTitleListItem },
   name: "CommingSoonMovieListPanel",
   setup() {
@@ -32,5 +32,5 @@ export default {
 
     return { movie_groups };
   },
-};
+});
 </script>

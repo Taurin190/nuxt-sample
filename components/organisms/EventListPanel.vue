@@ -22,24 +22,20 @@
   </card-tile>
 </template>
 <script>
-import { useContext, useAsync } from "@nuxtjs/composition-api";
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
 import CampaignLink from "../molecules/CampaignLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
 import CardTile from "../atoms/CardTile.vue";
-export default {
+export default defineComponent({
   components: { PanelTitle, CampaignLink, CardTile },
   name: "EventListPanel",
-  data() {
-    return {
-      panel_title: {
-        to: "/events",
-        icon: "mdi-calendar-check",
-        title: "イベント",
-        etitle: "EVENTS",
-      },
-    };
-  },
   setup() {
+    const panel_title = {
+      to: "/events",
+      icon: "mdi-calendar-check",
+      title: "イベント",
+      etitle: "EVENTS",
+    };
     const { app } = useContext();
     const events = useAsync(async () => {
       const response = await app.$repositories("event").get();
@@ -47,7 +43,7 @@ export default {
       return response.data;
     });
 
-    return { events };
+    return { events, panel_title };
   },
-};
+});
 </script>

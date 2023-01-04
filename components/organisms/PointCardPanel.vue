@@ -21,14 +21,15 @@ div.point-card-panel {
 }
 </style>
 <script>
+import { defineComponent } from "@nuxtjs/composition-api";
 import CardTile from "../atoms/CardTile.vue";
 import LoginPageLink from "../molecules/LoginPageLink.vue";
 import PanelTitle from "../molecules/PanelTitle.vue";
 import PointCardLink from "../molecules/PointCardLink.vue";
-export default {
+export default defineComponent({
   components: { PanelTitle, PointCardLink, LoginPageLink, CardTile },
   name: "PointCardPanel",
-  data() {
+  setup() {
     return {
       panel_title: {
         to: "/pointcard",
@@ -38,5 +39,5 @@ export default {
       },
     };
   },
-};
+});
 </script>

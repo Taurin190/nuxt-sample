@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import { useContext, useAsync } from '@nuxtjs/composition-api'
+import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import ImageBanner from '~/components/molecules/ImageBanner.vue';
-export default {
+export default defineComponent({
   components: { ImageBanner },
   name: "ImageBanners",
   setup() {
@@ -23,5 +23,5 @@ export default {
 
     return { banners };
   },
-};
+});
 </script>

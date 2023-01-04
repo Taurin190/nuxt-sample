@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import { useContext, useAsync } from "@nuxtjs/composition-api";
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
 import SquareCard from "../molecules/SquareCard.vue";
-export default {
+export default defineComponent({
   components: { SquareCard },
   name: "FrequentQuestionsPanel",
   setup() {
@@ -30,5 +30,5 @@ export default {
 
     return { banners };
   },
-};
+});
 </script>

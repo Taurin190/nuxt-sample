@@ -30,18 +30,25 @@
 <style scoped>
 </style>
 <script>
+import { defineComponent } from "@nuxtjs/composition-api";
 import AddressBarLogo from "~/components/molecules/AddressBarLogo.vue";
-import CompanyLink from '../molecules/CompanyLink.vue';
-import CopyWrite from '../molecules/CopyWrite.vue';
+import CompanyLink from "../molecules/CompanyLink.vue";
+import CopyWrite from "../molecules/CopyWrite.vue";
 import IMaxLink from "../molecules/IMaxLink.vue";
 import PageLinkList from "../molecules/PageLinkList.vue";
-export default {
+export default defineComponent({
   name: "FooterPanel",
-  components: { AddressBarLogo, IMaxLink, PageLinkList, CopyWrite, CompanyLink },
-  data() {
+  components: {
+    AddressBarLogo,
+    IMaxLink,
+    PageLinkList,
+    CopyWrite,
+    CompanyLink,
+  },
+  setup() {
     return {
-      fixed: false
-    }
-  }
-};
+      fixed: false,
+    };
+  },
+});
 </script>

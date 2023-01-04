@@ -17,7 +17,9 @@
       <explanation-card :icon="card.icon" :title="card.title" />
     </div>
     <div class="px-2">
-      <p>※毎日AM3:00〜AM6:00は定期メンテナンス中となりますので、予めご了承ください。</p>
+      <p>
+        ※毎日AM3:00〜AM6:00は定期メンテナンス中となりますので、予めご了承ください。
+      </p>
     </div>
     <div class="py-5">
       <h3>お支払い方法</h3>
@@ -45,42 +47,40 @@ div.ticket-system-panel {
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import SquareCard from "../molecules/SquareCard.vue";
-import { useContext, useAsync } from "@nuxtjs/composition-api";
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
 import ExplanationCard from "../molecules/ExplanationCard.vue";
-import CinemaLinkButton from '../atoms/CinemaLinkButton.vue';
-export default {
+import CinemaLinkButton from "../atoms/CinemaLinkButton.vue";
+export default defineComponent({
   components: { SquareCard, PanelTitle, ExplanationCard, CinemaLinkButton },
   name: "TheaterServicePanel",
   setup() {
     const { app } = useContext();
+    const cards = [
+      {
+        icon: "mdi-run-fast",
+        title: "窓口よりも早くお求めいただけます",
+        description:
+          "ご鑑賞希望日の3日前0時から上映直前20分前までインターネットで受け付け。",
+      },
+      {
+        icon: "mdi-sofa-single",
+        title: "全席ピンポイント座席取得",
+        description: "お好きな座席をピンポイントで取得することが可能。",
+      },
+      {
+        icon: "mdi-currency-usd-off",
+        title: "手数料無料",
+        description:
+          "クレジットカードの決済手数料、チケット発行手数料などは一切ございませんので窓口と同じ料金でお求めいただけます。",
+      },
+    ];
     const services = useAsync(async () => {
       const response = await app.$repositories("service").getTheaterService();
       console.log(response.data);
       return response.data;
     });
 
-    return { services };
+    return { services, cards };
   },
-  data() {
-    return {
-      cards: [
-        {
-          icon: "mdi-run-fast",
-          title: "窓口よりも早くお求めいただけます",
-          description: "ご鑑賞希望日の3日前0時から上映直前20分前までインターネットで受け付け。"
-        },
-        {
-          icon: "mdi-sofa-single",
-          title: "全席ピンポイント座席取得",
-          description: "お好きな座席をピンポイントで取得することが可能。"
-        },
-        {
-          icon: "mdi-currency-usd-off",
-          title: "手数料無料",
-          description: "クレジットカードの決済手数料、チケット発行手数料などは一切ございませんので窓口と同じ料金でお求めいただけます。"
-        }
-      ]
-    }
-  }
-};
+});
 </script>

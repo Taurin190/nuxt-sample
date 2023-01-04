@@ -40,27 +40,24 @@ div.theater-panel.brown {
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import TheaterList from "../molecules/TheaterList.vue";
-import { useContext, useAsync } from "@nuxtjs/composition-api";
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
 
-export default {
+export default defineComponent({
   components: { PanelTitle, TheaterList },
-  data() {
-    return {
-      panel_title: {
-        to: "/thater",
-        icon: "mdi-theater",
-        title: "Sampleシネマズ",
-        etitle: "THEATER",
-      },
-    };
-  },
   props: {
     theme_color_class: {
       type: String,
       default: "light_blue",
     },
   },
-  setup() {
+  setup(props) {
+    const panel_title = {
+        to: "/thater",
+        icon: "mdi-theater",
+        title: "Sampleシネマズ",
+        etitle: "THEATER",
+      };
+    const theme_color_class = props['theme_color_class'];
     const { app } = useContext();
     const theaters = useAsync(async () => {
       const response = await app.$repositories("theater").get();
@@ -81,7 +78,7 @@ export default {
       return theater_obj;
     });
 
-    return { theaters };
+    return { theaters, panel_title, theme_color_class };
   },
-};
+});
 </script>

@@ -24,41 +24,19 @@
 <script>
 import PanelTitle from "../molecules/PanelTitle.vue";
 import MovieCard from "../molecules/MovieCard.vue";
-import { useContext, useAsync } from "@nuxtjs/composition-api";
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
 import CardTile from "../atoms/CardTile.vue";
 
-export default {
+export default defineComponent({
   components: { PanelTitle, MovieCard, CardTile },
   name: "CommingSoonMovieTopListPanel",
-  props: {
-    to: {
-      type: String,
-      default: "",
-    },
-    icon: {
-      type: String,
-      default: "",
-    },
-    title: {
-      type: String,
-      default: "",
-    },
-    etitle: {
-      type: String,
-      default: "",
-    },
-  },
-  data() {
-    return {
-      panel_title: {
-        to: "/comingsoon",
-        icon: "mdi-video-vintage",
-        title: "公開予定作品",
-        etitle: "COMING SOON",
-      },
-    };
-  },
   setup() {
+    const panel_title = {
+      to: "/comingsoon",
+      icon: "mdi-video-vintage",
+      title: "公開予定作品",
+      etitle: "COMING SOON",
+    };
     const { app } = useContext();
     const movies = useAsync(async () => {
       const response = await app.$repositories("movie").getCommingSoon();
@@ -66,7 +44,7 @@ export default {
       return response.data;
     });
 
-    return { movies };
+    return { movies, panel_title };
   },
-};
+});
 </script>

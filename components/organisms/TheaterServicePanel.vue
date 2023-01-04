@@ -16,8 +16,8 @@
 
 <script>
 import SquareCard from "../molecules/SquareCard.vue";
-import { useContext, useAsync } from "@nuxtjs/composition-api";
-export default {
+import { defineComponent, useContext, useAsync } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { SquareCard },
   name: "TheaterServicePanel",
   setup() {
@@ -30,5 +30,5 @@ export default {
 
     return { services };
   },
-};
+});
 </script>

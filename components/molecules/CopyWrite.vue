@@ -7,7 +7,8 @@ a.left-divider {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "CopyWrite",
   props: {
     text: {
@@ -15,5 +16,10 @@ export default {
       default: "© 2022 Taurin190.com.",
     },
   },
-};
+  setup(props) {
+    const text = props["text"];
+
+    return { text };
+  },
+});
 </script>

@@ -1,10 +1,10 @@
 <template>
   <v-row>
-    <v-col cols="8"> 
+    <v-col cols="8">
       <h3>{{ title }}</h3>
     </v-col>
     <v-col cols="4">
-      <list-page-link :to="to" /> 
+      <list-page-link :to="to" />
     </v-col>
   </v-row>
 </template>
@@ -14,8 +14,9 @@ a.left-divider {
 }
 </style>
 <script>
-import ListPageLink from './ListPageLink.vue';
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+import ListPageLink from "./ListPageLink.vue";
+export default defineComponent({
   components: { ListPageLink },
   name: "CardTitle",
   props: {
@@ -26,7 +27,13 @@ export default {
     to: {
       type: String,
       default: "/",
-    }
+    },
   },
-};
+  setup(props) {
+    const to = props["to"];
+    const title = props["title"];
+
+    return { to, title };
+  },
+});
 </script>

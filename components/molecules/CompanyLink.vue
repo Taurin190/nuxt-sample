@@ -17,8 +17,9 @@ a.left-divider {
 }
 </style>
 <script>
+import { defineComponent } from "@nuxtjs/composition-api";
 import CinemaLink from "../atoms/CinemaLink.vue";
-export default {
+export default defineComponent({
   components: { CinemaLink },
   name: "CompanyLink",
   props: {
@@ -31,5 +32,10 @@ export default {
       ],
     },
   },
-};
+  setup(props) {
+    const links = props["links"];
+
+    return { links };
+  },
+});
 </script>

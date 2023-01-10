@@ -20,9 +20,10 @@ div.v-image:hover {
 }
 </style>
 <script>
+import { defineComponent } from "@nuxtjs/composition-api";
 import CinemaLink from "../atoms/CinemaLink.vue";
-import HoverImage from '../atoms/HoverImage.vue';
-export default {
+import HoverImage from "../atoms/HoverImage.vue";
+export default defineComponent({
   components: { CinemaLink, HoverImage },
   name: "CampaignLink",
   props: {
@@ -39,5 +40,12 @@ export default {
       default: "",
     },
   },
-};
+  setup(props) {
+    const to = props["to"];
+    const image_path = props["image_path"];
+    const description = props["description"];
+
+    return { to, image_path, description };
+  },
+});
 </script>

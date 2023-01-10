@@ -13,13 +13,18 @@
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "AddressBarLogo",
   props: {
     image_path: {
       type: String,
       default: "/address-bar-logo.png",
     },
+  },
+  setup(props) {
+    const image_path = props['image_path'];
+    return { image_path };
   }
-};
+});
 </script>

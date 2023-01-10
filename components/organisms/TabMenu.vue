@@ -39,7 +39,8 @@ span.e-title {
 </style>
 
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "TabMemu",
   props: {
     active: {
@@ -47,7 +48,7 @@ export default {
       default: 1,
     },
   },
-  data() {
+  setup() {
     return {
       tabs: [
         {
@@ -101,5 +102,5 @@ export default {
       ],
     };
   },
-};
+});
 </script>

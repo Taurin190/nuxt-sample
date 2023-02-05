@@ -1,6 +1,6 @@
 <template>
-  <nuxt-link class="cinema-link text-decoration-none" :to="to">
-      <slot></slot>
+  <nuxt-link class="cinema-link text-decoration-none" :to="link">
+    <slot></slot>
   </nuxt-link>
 </template>
 <style scoped>
@@ -12,7 +12,8 @@ a.cinema-link:hover {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "CinemaLink",
   props: {
     to: {
@@ -20,5 +21,9 @@ export default {
       default: "/",
     },
   },
-};
+  setup(props) {
+    const link = props["to"];
+    return { link };
+  },
+});
 </script>

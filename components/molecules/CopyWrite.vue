@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" class="white--text text-center"> {{ text }} </v-col>
+  <v-col cols="12" class="white--text text-center"> {{ copy_write.text }} </v-col>
 </template>
 <style scoped>
 a.left-divider {
@@ -17,9 +17,9 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const text = props["text"];
+    const copy_write = {text: props["text"]};
 
-    return { text };
+    return { copy_write };
   },
 });
 </script>

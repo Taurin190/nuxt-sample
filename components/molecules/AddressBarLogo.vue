@@ -2,7 +2,7 @@
   <img
     class="address-bar-logo"
     alt="Sample CINEMAS"
-    :src="image_path"
+    :src="image.path"
   />
 </template>
 
@@ -23,8 +23,9 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const image_path = props['image_path'];
-    return { image_path };
+    const image = { path: props['image_path']};
+
+    return { image };
   }
 });
 </script>

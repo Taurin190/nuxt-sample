@@ -1,12 +1,12 @@
 <template>
-  <cinema-link :to="to">
+  <cinema-link :to="link.to">
     <v-row dense>
       <v-col cols="6">
-        <hover-image :src="image_path" />
+        <hover-image :src="link.image_path" />
       </v-col>
       <v-col cols="6">
         <span>
-          {{ description }}
+          {{ link.description }}
         </span>
       </v-col>
     </v-row>
@@ -41,11 +41,13 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const to = props["to"];
-    const image_path = props["image_path"];
-    const description = props["description"];
+    const link = {
+      to: props["to"],
+      image_path: props["image_path"],
+      description: props["description"]
+    };
 
-    return { to, image_path, description };
+    return { link };
   },
 });
 </script>

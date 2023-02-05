@@ -2,7 +2,7 @@
   <v-col cols="12" class="white--text text-center">
     <cinema-link
       class="px-2"
-      v-for="link in links"
+      v-for="link in company_links"
       :to="link.to"
       :key="link.text"
       v-bind:class="[link.index > 1 ? 'left-divider' : '']"
@@ -33,9 +33,9 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const links = props["links"];
+    const company_links = props["links"];
 
-    return { links };
+    return { company_links };
   },
 });
 </script>

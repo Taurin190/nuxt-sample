@@ -62,8 +62,8 @@ span.e-title.light {
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
 import ListPageLink from './ListPageLink.vue';
-
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink, ListPageLink },
   name: "PanelTitle",
   props: {
@@ -92,5 +92,5 @@ export default {
         default: true,
     }
   },
-};
+});
 </script>

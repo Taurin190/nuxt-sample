@@ -54,7 +54,8 @@ div.footer-link {
 </style>
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink },
   name: "PageLinkList",
   props: {
@@ -110,5 +111,5 @@ export default {
       ],
     },
   },
-};
+});
 </script>

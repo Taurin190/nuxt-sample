@@ -16,7 +16,8 @@
   </nuxt-link>
 </template>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "PointCardLink",
   props: {
     to: {
@@ -32,5 +33,5 @@ export default {
       default: "５回見たら１回半額！お得な特典がいっぱい！",
     },
   },
-};
+});
 </script>

@@ -25,7 +25,8 @@ div.credit-title {
 <script>
 import MovieCreditTitleCard from "./MovieCreditTitleCard.vue";
 import ShowingTheater from "./ShowingTheater.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "MovieCreditTitleListItem",
   components: { MovieCreditTitleCard, ShowingTheater },
   props: {
@@ -72,5 +73,5 @@ export default {
       ],
     },
   },
-};
+});
 </script>

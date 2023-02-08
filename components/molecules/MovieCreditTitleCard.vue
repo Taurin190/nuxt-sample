@@ -40,7 +40,8 @@ span.movie-credit {
 import CinemaLink from "../atoms/CinemaLink.vue";
 import HoverImage from "../atoms/HoverImage.vue";
 import ListPageLink from "./ListPageLink.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink, HoverImage, ListPageLink },
   name: "MovieCreditTitleCard",
   props: {
@@ -65,5 +66,5 @@ export default {
       default: "",
     },
   },
-};
+});
 </script>

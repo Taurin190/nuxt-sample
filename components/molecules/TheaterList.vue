@@ -63,7 +63,8 @@ li > a:link {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "TheaterList",
   props: {
     theaters: {
@@ -201,5 +202,5 @@ export default {
       default: "light_blue"
     }
   },
-};
+});
 </script>

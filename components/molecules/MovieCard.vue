@@ -7,7 +7,8 @@
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
 import HoverImage from "../atoms/HoverImage.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink, HoverImage },
   name: "MovieCard",
   props: {
@@ -24,5 +25,5 @@ export default {
       default: "",
     },
   },
-};
+});
 </script>

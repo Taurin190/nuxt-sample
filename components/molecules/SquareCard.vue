@@ -19,7 +19,8 @@ import CardTile from "../atoms/CardTile.vue";
 import CinemaLink from "../atoms/CinemaLink.vue";
 import HoverImage from "../atoms/HoverImage.vue";
 import ListPageLink from "./ListPageLink.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink, HoverImage, ListPageLink, CardTile },
   name: "SquareCard",
   props: {
@@ -40,5 +41,5 @@ export default {
       default: "",
     },
   },
-};
+});
 </script>

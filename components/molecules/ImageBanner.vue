@@ -12,14 +12,14 @@ img {
 }
 </style>
 <script>
-import CinemaLink from '../atoms/CinemaLink.vue';
-import HoverImage from '../atoms/HoverImage.vue';
-export default {
+import CinemaLink from "../atoms/CinemaLink.vue";
+import HoverImage from "../atoms/HoverImage.vue";
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink, HoverImage },
   name: "ImageBanner",
   props: {
-
-      to: {
+    to: {
       type: String,
       default: "/",
     },
@@ -28,5 +28,5 @@ export default {
       default: "/building_cinema_shitsunai.png",
     },
   },
-};
+});
 </script>

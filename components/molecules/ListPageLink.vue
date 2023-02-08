@@ -6,7 +6,8 @@
 </template>
 <script>
 import CinemaLink from "../atoms/CinemaLink.vue";
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   components: { CinemaLink },
   name: "ListPageLink",
   props: {
@@ -15,5 +16,5 @@ export default {
       default: "/",
     },
   },
-};
+});
 </script>

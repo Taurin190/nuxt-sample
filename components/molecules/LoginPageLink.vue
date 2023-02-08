@@ -30,7 +30,8 @@ span.selected {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "LoginPageLink",
   props: {
     theaters: {
@@ -64,10 +65,10 @@ export default {
       ],
     },
   },
-  data() {
-    return {
-      theaterSelected: [],
-    };
+  setup() {
+    var theaterSelected = [];
+    return { theaterSelected }
   },
-};
+
+});
 </script>

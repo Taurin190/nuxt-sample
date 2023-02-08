@@ -15,7 +15,8 @@ a.cinema-link {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "CinemaLinkButton",
   props: {
     to: {
@@ -23,5 +24,5 @@ export default {
       default: "/",
     },
   },
-};
+});
 </script>

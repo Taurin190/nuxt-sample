@@ -13,7 +13,8 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "ExplanationCard",
   props: {
     icon: {
@@ -30,5 +31,5 @@ export default {
         "ご鑑賞希望日の3日前0時から上映直前20分前までインターネットで受け付け。",
     },
   },
-};
+});
 </script>

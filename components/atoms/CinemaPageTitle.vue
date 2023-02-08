@@ -12,7 +12,8 @@ a.cinema-link:hover {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "CinemaPageTitle",
   props: {
     title: {
@@ -24,5 +25,5 @@ export default {
       default: "NOW SHOWING",
     },
   },
-};
+});
 </script>

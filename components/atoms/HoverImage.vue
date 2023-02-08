@@ -8,7 +8,8 @@ div.v-image:hover {
 }
 </style>
 <script>
-export default {
+import { defineComponent } from "@nuxtjs/composition-api";
+export default defineComponent({
   name: "CinemaLink",
   props: {
     src: {
@@ -16,5 +17,5 @@ export default {
       default: "/movie_tokusatsu_kaiju.png",
     },
   },
-};
+});
 </script>

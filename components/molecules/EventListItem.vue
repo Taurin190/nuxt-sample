@@ -17,9 +17,10 @@ span.event_date {
 }
 </style>
 <script>
+import { defineComponent } from "@nuxtjs/composition-api";
 import CinemaLink from "../atoms/CinemaLink.vue";
 import HoverImage from "../atoms/HoverImage.vue";
-export default {
+export default defineComponent({
   components: { CinemaLink, HoverImage },
   name: "EventListItem",
   props: {
@@ -40,5 +41,5 @@ export default {
       default: "[2022/08/19]",
     }
   },
-};
+});
 </script>

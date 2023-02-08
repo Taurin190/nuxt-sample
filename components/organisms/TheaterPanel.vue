@@ -57,7 +57,6 @@ export default defineComponent({
         title: "Sampleシネマズ",
         etitle: "THEATER",
       };
-    const theme_color_class = props['theme_color_class'];
     const { app } = useContext();
     const theaters = useAsync(async () => {
       const response = await app.$repositories("theater").get();
@@ -78,7 +77,7 @@ export default defineComponent({
       return theater_obj;
     });
 
-    return { theaters, panel_title, theme_color_class };
+    return { theaters, panel_title };
   },
 });
 </script>
